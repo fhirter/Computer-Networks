@@ -22,16 +22,11 @@ pwm_inverted = np.array(pwm)
 #change signal here
 input_signal = pwm*sine
 
-# filter signal
-b, a = signal.iirfilter(2, filter_frequency/sampling_frequency, btype='lowpass')
-filtered_square = signal.lfilter(b, a, input_signal)
-
 ## fourier transform
 f_orig = np.fft.fft(input_signal)
-f_filtered = np.fft.fft(filtered_square)
 
 ## sample frequencies
-freq = np.fft.fftfreq(len(filtered_square), d=t[1]-t[0])
+freq = np.fft.fftfreq(len(input_signal), d=t[1]-t[0])
 
 figure1, (ax1, ax2) = plt.subplots(2, 1)
 
