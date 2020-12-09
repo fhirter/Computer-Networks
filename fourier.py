@@ -4,20 +4,23 @@ from scipy import signal
 
 sampling_frequency = 1000
 filter_frequency = 10
-signal_frequency = 1
+period = 5
+signal_frequency = 1/period
+
+duty_cycle = 0.1
 
 # Data for plotting
-t = np.linspace(0.0, 2.0, sampling_frequency)
+t = np.linspace(0.0, period, sampling_frequency)
 
-square = signal.square(2 * np.pi * signal_frequency * t)
-sine1 = np.sin(2 * np.pi * signal_frequency * t) + np.sin(2 * np.pi * 3*signal_frequency * t)
-sine2 = np.sin(2 * np.pi * 3*signal_frequency * t)
-sine3 = np.sin(2 * np.pi * 5*signal_frequency * t)
-sawtooth = signal.sawtooth(2 * np.pi * signal_frequency * t)
-noise = np.random.rand(sampling_frequency)
+sine = np.sin(2 * np.pi * signal_frequency * t)*325
+sawtooth = signal.sawtooth(2 * np.pi * signal_frequency * t*2)*0.5+0.5
+
+pwm = sawtooth > duty_cycle
+
+pwm_inverted = np.array(pwm)
 
 #change signal here
-input_signal = sine1
+input_signal = pwm*sine
 
 # filter signal
 b, a = signal.iirfilter(2, filter_frequency/sampling_frequency, btype='lowpass')
