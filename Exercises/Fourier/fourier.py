@@ -17,7 +17,7 @@ sawtooth = signal.sawtooth(2 * np.pi * signal_frequency * t)
 noise = np.random.rand(sampling_frequency)
 
 #change signal here
-input_signal = sine1
+input_signal = sine3 + sine2 + noise + sawtooth
 
 # filter signal
 b, a = signal.iirfilter(2, filter_frequency/sampling_frequency, btype='lowpass')
@@ -33,11 +33,11 @@ freq = np.fft.fftfreq(len(filtered_square), d=t[1]-t[0])
 figure1, (ax1, ax3) = plt.subplots(2, 1)
 
 ax1.plot(t, input_signal)
-ax1.set(xlabel='time (s)', title='Square signal')
+ax1.set(xlabel='time (s)', title='Input Signal')
 ax1.grid()
 
 ax3.bar(freq, abs(f_orig)**2, 0.3)
-ax3.set(xlabel='frequency (Hz)', title='Filtered square Signal')
+ax3.set(xlabel='frequency (Hz)', title='Frequency Spectrum')
 ax3.set_xlim(0, signal_frequency*10)
 ax3.grid()
 ax3.set_xticks(np.arange(signal_frequency, signal_frequency*10, step=signal_frequency))
