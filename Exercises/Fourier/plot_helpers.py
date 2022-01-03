@@ -32,7 +32,7 @@ def plot_time_and_frequency_domain(input_signal, sampling_frequency):
 
     ax1.grid()
     ax2.grid()
-    # ax2.set_xticks(arange(signal_frequency, signal_frequency * 10, step=signal_frequency))
+    ax2.set_xticks(np.arange(base_frequency, base_frequency * 50, step=5*base_frequency))
 
     # figure2, (ax2, ax4) = plt.subplots(2, 1)
     # ax2.plot(t, filtered_square)
