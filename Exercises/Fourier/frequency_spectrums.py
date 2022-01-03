@@ -4,7 +4,7 @@ from plot_helpers import *
 from signal_helpers import *
 
 # signal parameters
-signal_type = "square"    # one of: square, sine, sawtooth, noise
+signal_type = "square"  # one of: square, sine, sawtooth, noise
 signal_frequency = 2
 
 # filter parameters

@@ -32,15 +32,6 @@ def plot_time_and_frequency_domain(input_signal, sampling_frequency):
 
     ax1.grid()
     ax2.grid()
-    ax2.set_xticks(np.arange(base_frequency, base_frequency * 50, step=5*base_frequency))
-
-    # figure2, (ax2, ax4) = plt.subplots(2, 1)
-    # ax2.plot(t, filtered_square)
-    # ax2.set(xlabel='time (s)', title='Lowpass filtered square signal')
-    # ax2.grid()
-    #
-    # ax4.bar(freq, abs(f_filtered)**2, 0.1)
-    # ax4.set(xlabel='frequency (Hz)', title='Lowpass Square signal')
-    # ax4.set_xlim(0, signal_frequency*10)
+    ax2.set_xticks(np.arange(base_frequency, base_frequency * 50, step=5 * base_frequency))
 
     plt.show()
