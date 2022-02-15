@@ -5,7 +5,7 @@ from signal_helpers import *
 
 # signal parameters
 signal_type = "square"  # one of: square, sine, sawtooth, noise
-signal_frequency =10
+signal_frequency =1000
 
 # filter parameters
 critical_frequencies = [50, 5000]
