@@ -17,4 +17,5 @@ for index, signal_frequency in enumerate(signal_frequencies):
     else:
         signal += signal_amplitudes[index]*np.sin(time_array * signal_frequency)
 
-plot_time_and_frequency_domain(signal, sampling_frequency)
+plt = plot_time_and_frequency_domain(signal, sampling_frequency)
+plt.show();

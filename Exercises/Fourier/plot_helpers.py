@@ -20,6 +20,9 @@ def plot_time_and_frequency_domain(input_signal, sampling_frequency):
 
     base_frequency = np.argmax(np.asarray(yf[0:math.floor(sampling_frequency / 2)])) / 2
 
+    ax1.grid()
+
+    ax2.grid()
     ax2.stem(frequencies, mag2db(abs(yf)), 'b', markerfmt=" ", basefmt="-b")
 
     ax2.set(
@@ -27,11 +30,11 @@ def plot_time_and_frequency_domain(input_signal, sampling_frequency):
         ylabel='Power dB'
     )
 
-    ax2.set_xlim(0, base_frequency * 50)
-    ax2.set_ylim(0, 50)
+    ax1.set_xlim(0, sampling_frequency/base_frequency)
 
-    ax1.grid()
-    ax2.grid()
-    ax2.set_xticks(np.arange(base_frequency, base_frequency * 50, step=5 * base_frequency))
+    ax2.set_xlim(0, base_frequency * 100)
 
-    plt.show()
+    ax2.set_ylim(0, 80)
+    ax2.set_xticks(np.arange(base_frequency, base_frequency * 100, step=10 * base_frequency))
+
+    return plt
