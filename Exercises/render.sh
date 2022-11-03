@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 
-pandoc 01_Bandwith.md -o 01_Bandwith.pdf
+for i in *.md ; do
+  [[ -f "$i" ]] || continue
+  pandoc "$i" -o "${i%.md}.pdf"
+done
