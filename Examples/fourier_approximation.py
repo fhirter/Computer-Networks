@@ -1,5 +1,3 @@
-import numpy as np
-
 from plot_helpers import *
 
 # see http://www.thomasborer.ch/mathematik_alt/m_te_fr.pdf for examples
@@ -18,4 +16,4 @@ for index, signal_frequency in enumerate(signal_frequencies):
         signal += signal_amplitudes[index]*np.sin(time_array * signal_frequency)
 
 plt = plot_time_and_frequency_domain(signal, sampling_frequency)
-plt.show();
+plt.show()
