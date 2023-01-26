@@ -24,5 +24,20 @@ class TestErrerDetection(unittest.TestCase):
 
         self.assertEqual(expected_parity, actual_parity)
 
+    def test_checksum_creation(self):
+        error_detection = ErrorDetection()
+        array = [
+            0b1010110000100110,
+            0b0100010111010001,
+            0b1101101100001011
+        ]
+
+
+        expected_result = 0b1100110100000011
+
+        result = error_detection.get_checksum(array)
+
+        self.assertEqual(expected_result, result)
+
 if __name__ == '__main__':
     unittest.main()

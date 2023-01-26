@@ -18,3 +18,15 @@ class ErrorDetection:
         one_count += 1 # increment to get even parity
         parity = (one_count % 2)
         return parity
+
+    def ones_comp_add16(self, num1, num2):
+        MOD = 1 << 16
+        result = num1 + num2
+        return result if result < MOD else (result + 1) % MOD
+
+    def get_checksum(self, array):
+        result = array[0]
+        for i in range(1, len(array)):
+            result = self.ones_comp_add16(result, array[i])
+
+        return result
