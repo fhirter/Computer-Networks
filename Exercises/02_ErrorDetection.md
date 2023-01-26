@@ -8,6 +8,12 @@
 
 ## Übung 2: Checksumme
 
-1. Schreibe eine Funktion, die für ein beliebig langes Array von binären 16bit Zahlen die Checksumme überprüft. Die Checksumme solle der Funktion als separater Parameter übergeben werden.
-2. Schreibe eine Funktion, die für dieselben Daten die Checksumme berechnet.
+1. Schreibe eine Funktion, die für ein beliebig langes Array von binären 16bit Zahlen die Checksumme berechnet. Verwende dafür die bei TCP verwendete Einerkomplement-Addition:
+```
+def ones_comp_add16(num1,num2):
+    MOD = 1 << 16
+    result = num1 + num2
+    return result if result < MOD else (result+1) % MOD
+```
+2. Extrahiere mit Wireshark die [nötigen Daten](https://de.wikipedia.org/wiki/Transmission_Control_Protocol#TCP-Pr%C3%BCfsumme_und_TCP-Pseudo-Header) aus einem TCP Paket und überprüfe damit, ob du die Prüfsumme korrekt berechnen kannst. 
 3. Überprüfe, welche Fehler mit einer Checksumme erkennt werden können und welche nicht. Halte deine Erkenntnisse fest.
