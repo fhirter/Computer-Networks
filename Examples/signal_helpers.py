@@ -14,6 +14,18 @@ def create_signal(type, signal_frequency, sampling_frequency):
     if type == "sawtooth":
         signal = scp_signal.sawtooth(time_array)
     if type == "noise":
-        signal = np.random.rand(sampling_frequency)
+        n = len(t)
+        x = np.random.randn(n)
+        variance = np.sum(x**2) / n
+        scale_factor = 1 / np.sqrt(variance)
+
+        signal = x * scale_factor
+
+        # shift the signal to have mean of 0
+        mean_value = np.mean(signal)
+        signal -= mean_value
+
+        rms = np.sqrt(np.mean(signal ** 2))
+        mean = np.mean(signal)
 
     return signal
