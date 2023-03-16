@@ -5,7 +5,7 @@ from plot_helpers import *
 from signal_helpers import *
 
 # relevant parameters
-critical_frequencies = [5, 10000]
+filter_frequencies = [5, 10000]
 signal_level_db = 0
 noise_level_db = -100
 
@@ -29,7 +29,7 @@ signal = signal_multiplier*signal+noise_multiplier*noise
 
 # filter signal
 filter_type = "bandpass"
-normalized_filter_frequency = [x / sampling_frequency for x in critical_frequencies]
+normalized_filter_frequency = [x / sampling_frequency for x in filter_frequencies]
 b, a = iirfilter(filter_order, normalized_filter_frequency, btype=filter_type)
 signal = lfilter(b, a, signal)
 
