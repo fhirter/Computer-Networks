@@ -23,7 +23,8 @@ def plot_time_and_frequency_domain(input_signal, sampling_frequency):
     ax1.grid()
 
     ax2.grid()
-    ax2.stem(frequencies, mag2db(abs(yf)), 'b', markerfmt=" ", basefmt="-b")
+    levels = mag2db(yf)
+    ax2.stem(frequencies, levels, 'b', markerfmt=" ", basefmt="-b")
 
     ax2.set(
         xlabel='Frequency [Hz]',
@@ -34,7 +35,7 @@ def plot_time_and_frequency_domain(input_signal, sampling_frequency):
 
     ax2.set_xlim(0, base_frequency * 100)
 
-    ax2.set_ylim(0, 80)
+    ax2.set_ylim(min(levels)-10, max(levels)+10)
     ax2.set_xticks(np.arange(base_frequency, base_frequency * 100, step=10 * base_frequency))
 
     return plt
