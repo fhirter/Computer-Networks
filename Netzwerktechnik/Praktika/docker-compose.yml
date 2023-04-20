@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  ftp:
+    container_name: ftp-server
+    build: .
+    ports:
+      - "20-21:20-21/tcp"
