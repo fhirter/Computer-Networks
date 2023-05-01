@@ -1,4 +1,14 @@
 # Praktikum HTTP
+## Lernziele
+Die Studierenden kennen das HTTP Protokoll und dessen Funktionsweise.
+
+Die aufgeführten Fragen und Aufgaben sollen dem Erreichen der Lernziele dienen. 
+Zusätzliche Experimente und Recherchen sind ausdrücklich erwünscht.
+
+Haltet die Antworten zu den Fragen und Aufgaben sowie zusätzliche Erkenntnisse in einem kurzen Bericht fest.
+Dieser Bericht ist am Schluss einzureichen.
+Er wird nicht bewertet und es werden keine formellen Anforderungen gestellt.
+
 ## Browsertools
 ### Vorbereitungen
 - Öffne einen Browser (Chrome oder Firefox)
