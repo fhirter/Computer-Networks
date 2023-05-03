@@ -66,4 +66,6 @@ Die Daten des HTTP Protokolls sind nicht mehr sichtbar, da sie in den TLS Pakete
 ## cURL, wget
 - Erstelle dieselbe HTTP Anfrage auch mit den CLI Programmen `cURL` und `Wget`.
 - Speichere die Website in einer Datei.
-- 
+
+`curl -o info.cern.ch.html info.cern.ch`
+`wget info.cern.ch`
