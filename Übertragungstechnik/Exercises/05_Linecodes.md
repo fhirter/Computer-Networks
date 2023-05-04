@@ -1,5 +1,5 @@
 # Übung Leitungscodes
-Codiere folgenden String mit dem 8b10b Leitungscode:
+Codiere folgenden String mit dem 4b5b Leitungscode:
 `Hello World`
 
 Wähle ein geeignetes Werkzeug für diese Aufgabe.
