@@ -2,6 +2,9 @@
 ## Lernziele
 Die Studierenden kennen das HTTP Protokoll und dessen Funktionsweise.
 
+Die Studierenden sind in der Lage, Netzwerkanalysen mit entsprechenden Tools durchzuführen, die Ergebnisse zu analysieren und einfache Netzwerkfehler zu beheben. 
+
+## Aufgabenstellung
 Die aufgeführten Fragen und Aufgaben sollen dem Erreichen der Lernziele dienen. 
 Zusätzliche Experimente und Recherchen sind ausdrücklich erwünscht.
 
