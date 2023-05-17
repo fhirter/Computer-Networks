@@ -29,7 +29,9 @@ Er wird nicht bewertet und es werden keine formellen Anforderungen gestellt.
 ## REST
 Wähle eine der folgenden APIs aus und mache eine Anfrage mit cURL und Insomnia.
 Bei einigen der APIs muss zuerst ein API Key erstellt werden.
-Untersuche die Antwort und wie du mit der Anfrage die Antwort beeinflussen kannst.
+- Untersuche die Antwort und wie du mit der Anfrage die Antwort beeinflussen kannst.
+- Vergleiche die Endpunkte und die Antwort mit der REST Theorie. Wo entspricht die API den REST Prinzipien, wo nicht?
+
 * [IMDB](https://imdb-api.com/API)
 * [SBB](https://data.sbb.ch/pages/home/)
 * [Open-Data-Plattform Mobilität](https://opentransportdata.swiss/de/)
