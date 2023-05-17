@@ -27,11 +27,8 @@ Er wird nicht bewertet und es werden keine formellen Anforderungen gestellt.
 
 
 ## REST
+### Vorbereitung
 Wähle eine der folgenden APIs aus und mache eine Anfrage mit cURL und Insomnia.
-Bei einigen der APIs muss zuerst ein API Key erstellt werden.
-- Untersuche die Antwort und wie du mit der Anfrage die Antwort beeinflussen kannst.
-- Vergleiche die Endpunkte und die Antwort mit der REST Theorie. Wo entspricht die API den REST Prinzipien, wo nicht?
-
 * [IMDB](https://imdb-api.com/API)
 * [SBB](https://data.sbb.ch/pages/home/)
 * [Open-Data-Plattform Mobilität](https://opentransportdata.swiss/de/)
@@ -40,3 +37,10 @@ Bei einigen der APIs muss zuerst ein API Key erstellt werden.
 * [Google Maps](https://developers.google.com/maps/documentation/maps-static)
 * [Youtube](https://developers.google.com/youtube/v3/getting-started?hl=de)
 * [Openai](https://platform.openai.com/docs/api-reference)
+
+Bei einigen der APIs muss zuerst ein API Key erstellt werden.
+
+### Fragen und Aufgaben
+- Untersuche die Antwort und wie du mit der Anfrage die Antwort beeinflussen kannst.
+- Vergleiche die Endpunkte und die Antwort mit der REST Theorie. Wo entspricht die API den REST Prinzipien, wo nicht?
+
