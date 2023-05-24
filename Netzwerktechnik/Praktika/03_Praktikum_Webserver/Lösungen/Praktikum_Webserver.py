@@ -21,6 +21,7 @@ class SimpleWebserver(BaseHTTPRequestHandler):
         self.end_headers()
 
         self.wfile.write(bytes(f'''
+            <!DOCTYPE html>
             <html><head><title>https://pythonbasics.org</title></head>
             <body>
                 <p>{body}</p>
