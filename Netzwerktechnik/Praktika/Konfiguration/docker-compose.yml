@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  dhcp:
+    container_name: dhcp
+    build: dhcp/
+    ports:
+      - "67:67/udp"
+      - "547:547/udp"
+  gateway:
+    container_name: gateway
+    build: gateway/
+  ftp:
+    container_name: ftp
+    build: ftp/
+
+
