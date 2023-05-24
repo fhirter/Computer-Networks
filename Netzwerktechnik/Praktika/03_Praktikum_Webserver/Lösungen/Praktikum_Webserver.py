@@ -28,6 +28,7 @@ class SimpleWebserver(BaseHTTPRequestHandler):
         ''', "utf-8"))
 
     def do_POST(self):
+        # try: `curl --data foo localhost:8080`
         content_length = int(self.headers.get('Content-Length'))
         post_body = self.rfile.read(content_length)
         print(post_body)
