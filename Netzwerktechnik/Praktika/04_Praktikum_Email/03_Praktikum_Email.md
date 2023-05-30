@@ -8,12 +8,12 @@ Erstelle ein Login und einen API Key bei folgendem Dienst:
 
 ## Aufgabenstellung
 Schreib ein Python eine kleine Applikation, die per E-Mail Routen-Informationen liefert.
-Es soll eine Mail geschickt werden können welche zwei Adressen enthält:
+Es soll eine verschlüsselte Mail geschickt werden können welche zwei Adressen enthält:
 ```
 Bundesplatz 3, 3005 Bern
 Freiburgstrasse 20, 3010 Bern
 ```
-Anhand von diesen Informationen soll die Applikation eine Route erstellen und per E-Mail zurückschicken.
+Anhand von diesen Informationen soll die Applikation eine Route erstellen und per verschlüsselter E-Mail zurückschicken.
 
 Nutze einen eigenen Mailserver oder den zur Verfügung gestellten. 
 Dessen Verbindungsangaben findest du hier:
@@ -21,29 +21,11 @@ https://docs.immerda.ch/de/services/email/clients/
 
 Der Erkenntnisgewinn ist wichtiger als eine vollständige Lösung. Halte deine Erkenntnisse fest!
 
-## REST API Abfragen
-- Erstelle eine Anfrage mit Insomnia oder cURL um die Koordinaten für eine Adresse zu erhalten ([openrouteservice.org/dev/#/api-docs/geocode](https://openrouteservice.org/dev/#/api-docs/geocode/search/get)). 
-- Erstelle eine Anfrage mit Insomnia oder cURL um die Route zwischen diesen beiden Koordinaten zu erhalten. ([openrouteservice.org/dev/#/api-docs/v2/directions](https://openrouteservice.org/dev/#/api-docs/v2/directions/{profile}/get)).
-- Übertrage die beiden API Anfragen in Python nach folgendem Code Beispiel.
-
-```python
-import requests
-
-def get_coordinates(address):
-    url = f"<endpoint>?<parameter>={<value>}"
-
-    response = requests.get(url)
-
-    if response.status_code == 200:
-        data = response.json()
-        return data["features"][0]["geometry"]["coordinates"]
-    else:
-        print(f"Request failed with status code {response.status_code}")
-```
-
+**Vorsicht: Secrets (Passwörter, Private Keys) dürfen nie in der Versionsverwaltung erfasst werden!** Falls dies trotzdem passiert müssen die Passwörter und Keys sofort geändert werden.
 
 ## E-Mail Empfangen
-Empfange die neuste ungelesene Mail und den Absender mit IMAP:
+- Empfange die neuste ungelesene Mail und den Absender mit IMAP:
+- Entschlüssle die Nachricht mit dem PGP Public Key.
 
 ```python
 import email
@@ -80,9 +62,10 @@ def get_latest_new_email():
                 continue
 ```
 
-
 ## E-Mail Senden
-Nutze folgende Befehle der smtplib um E-Mails zu versenden. Konfiguriere die verwendeten Variablen entsprechend.
+- Nutze folgende Befehle der smtplib um E-Mails zu versenden. Konfiguriere die verwendeten Variablen entsprechend.
+- Verschlüssele die Nachricht mit einem PGP Public Key.
+
 ```python
 import smtplib
 import ssl
@@ -92,4 +75,26 @@ def send_mail(message, receiver_email):
     with smtplib.SMTP_SSL(smtp_server, smtp_port) as server:
         server.login(account_email, password)
         server.sendmail(account_email, receiver_email, message)
+```
+
+
+
+## REST API Abfragen
+- Erstelle eine Anfrage mit Insomnia oder cURL um die Koordinaten für eine Adresse zu erhalten ([openrouteservice.org/dev/#/api-docs/geocode](https://openrouteservice.org/dev/#/api-docs/geocode/search/get)). 
+- Erstelle eine Anfrage mit Insomnia oder cURL um die Route zwischen diesen beiden Koordinaten zu erhalten. ([openrouteservice.org/dev/#/api-docs/v2/directions](https://openrouteservice.org/dev/#/api-docs/v2/directions/{profile}/get)).
+- Übertrage die beiden API Anfragen in Python nach folgendem Code Beispiel.
+
+```python
+import requests
+
+def get_coordinates(address):
+    url = f"<endpoint>?<parameter>={<value>}"
+
+    response = requests.get(url)
+
+    if response.status_code == 200:
+        data = response.json()
+        return data["features"][0]["geometry"]["coordinates"]
+    else:
+        print(f"Request failed with status code {response.status_code}")
 ```
