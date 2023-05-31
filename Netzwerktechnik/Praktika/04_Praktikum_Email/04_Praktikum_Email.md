@@ -1,7 +1,7 @@
 # Praktikum E-Mail
 
 ## Lernziele
-Die Studierenden können die Anwenderdienste für das Senden und Empfangen von Mails mit ihren Merkmalen  charakterisieren und einen Mailclient in der Praxis konfigurieren. 
+Die Studierenden können die Anwenderdienste für das Senden und Empfangen von Mails mit ihren Merkmalen charakterisieren und einen Mailclient in der Praxis konfigurieren. 
 
 Die Studierenden sind in der Lage, Netzwerkanalysen mit entsprechenden Tools durchzuführen, die Ergebnisse zu analysieren und einfache Netzwerkfehler zu beheben. 
 
@@ -13,13 +13,13 @@ Erstelle ein Login und einen API Key bei folgendem Dienst:
 * [Openrouteservice](https://openrouteservice.org/dev/#/api-docs)
 
 ## Aufgabenstellung
-Schreib ein Python eine kleine Applikation, die per E-Mail Routen-Informationen liefert.
-Es soll eine verschlüsselte Mail geschickt werden können welche zwei Adressen enthält:
+Schreib ein Python eine kleine Applikation, die per E-Mail eine Adresse in Koordinaten auflöst.
+Es soll eine verschlüsselte Mail geschickt werden können welche eine Adressen enthält:
 ```
-Bundesplatz 3, 3005 Bern
 Freiburgstrasse 20, 3010 Bern
 ```
-Anhand von diesen Informationen soll die Applikation eine Route erstellen und per verschlüsselter E-Mail zurückschicken.
+
+Anhand von diesen Informationen soll die Applikation di Koordinaten abfragen per verschlüsselter E-Mail zurückschicken.
 
 Nutze einen eigenen Mailserver oder den zur Verfügung gestellten. 
 Dessen Verbindungsangaben findest du hier:
@@ -30,7 +30,7 @@ Der Erkenntnisgewinn ist wichtiger als eine vollständige Lösung. Halte deine E
 **Vorsicht: Secrets (Passwörter, Private Keys) dürfen nie in der Versionsverwaltung erfasst werden!** Falls dies trotzdem passiert müssen die Passwörter und Keys sofort geändert werden.
 
 ## E-Mail Empfangen
-- Empfange die neuste ungelesene Mail und den Absender mit IMAP:
+- Empfange die neuste ungelesene Mail und den Absender mit IMAP.
 - Entschlüssle die Nachricht mit dem PGP Public Key.
 
 ```python
