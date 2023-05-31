@@ -1,9 +1,13 @@
 import imaplib
+import os
 import smtplib
 import ssl
 import email
 
+import subprocess
+
 import requests
+
 
 imap_port = 993
 imap_server = "imap.immerda.ch"
@@ -13,11 +17,14 @@ smtp_server = "smtp.immerda.ch"
 
 account_email = "teko@fabianhirter.ch"
 
-password = input("Type your password and press enter:")
-api_key = input("Provide your API key:")
+#password = input("Type your password and press enter:")
+#api_key = input("Provide your API key:")
 
 mailbox = "INBOX"
 
+PUBLIC_KEY_FILE = '../public_key.asc'
+public_key_file_handler = open(PUBLIC_KEY_FILE, "r")
+public_key = public_key_file_handler.readlines()
 
 def get_latest_new_email():
     with imaplib.IMAP4_SSL(imap_server) as server:
@@ -53,9 +60,40 @@ def get_latest_new_email():
 def send_mail(message, receiver_email):
     context = ssl.create_default_context()
 
+    encrypted_message = encrypt_message(g_key, data)
+
     with smtplib.SMTP_SSL(smtp_server, smtp_port) as server:
         server.login(account_email, password)
         server.sendmail(account_email, receiver_email, message)
+
+
+def encrypt_message(recipient_mail, message):
+    """
+    Encrypts data using key.
+    """
+
+    temp_message_path = "./tmp.txt"
+    temp_message = open(temp_message_path, "w")
+    temp_message.writelines(message)
+
+    # gpg --recipient 6B0AC064EA829F61F730447DEF62CA8C485DEE52 --batch -o- --encrypt <(printf "foo")
+    status = subprocess.check_call([
+        "gpg",
+        "--recipient", recipient_mail,
+        "--batch",
+        "--encrypt", temp_message_path
+    ])
+
+    temp_message_path_encrypted = f"{temp_message_path}.gpg"
+
+    if status == 0:
+        with open(temp_message_path_encrypted, mode='rb') as file:
+            encrypted_message = file.read()
+
+        os.remove(temp_message_path)
+        os.remove(temp_message_path_encrypted)
+
+        return encrypted_message
 
 
 def get_coordinates(address):
@@ -69,3 +107,6 @@ def get_coordinates(address):
     else:
         print(f"Request failed with status code {response.status_code}")
 
+
+encrypted_message = encrypt_message("teko@fabianhirter.ch", "belpstrasse 37")
+print(encrypted_message)

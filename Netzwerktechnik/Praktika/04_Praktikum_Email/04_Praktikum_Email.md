@@ -70,7 +70,6 @@ def get_latest_new_email():
 
 ## E-Mail Senden
 - Nutze folgende Befehle der smtplib um E-Mails zu versenden. Konfiguriere die verwendeten Variablen entsprechend.
-- Verschlüssele die Nachricht mit einem PGP Public Key. Erstelle dazu ein persönliches Public/Private Key-Paar online oder mit gpg in der Konsole.
 
 ```python
 import smtplib
@@ -81,6 +80,40 @@ def send_mail(message, receiver_email):
     with smtplib.SMTP_SSL(smtp_server, smtp_port) as server:
         server.login(account_email, password)
         server.sendmail(account_email, receiver_email, message)
+```
+
+- Verschlüssele die Nachricht mit einem PGP Public Key. Erstelle dazu ein persönliches Public/Private Key-Paar online oder mit gpg in der Konsole.
+```python
+import subprocess
+import os
+
+def encrypt_message(recipient_mail, message):
+    """
+    Encrypts data using key.
+    """
+
+    temp_message_path = "./tmp.txt"
+    temp_message = open(temp_message_path, "w")
+    temp_message.writelines(message)
+
+    # gpg --recipient 6B0AC064EA829F61F730447DEF62CA8C485DEE52 --batch -o- --encrypt <(printf "foo")
+    status = subprocess.check_call([
+        "gpg",
+        "--recipient", recipient_mail,
+        "--batch",
+        "--encrypt", temp_message_path
+    ])
+
+    temp_message_path_encrypted = f"{temp_message_path}.gpg"
+
+    if status == 0:
+        with open(temp_message_path_encrypted, mode='rb') as file:
+            encrypted_message = file.read()
+
+        os.remove(temp_message_path)
+        os.remove(temp_message_path_encrypted)
+
+        return encrypted_message
 ```
 
 
