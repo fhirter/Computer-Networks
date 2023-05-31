@@ -17,14 +17,15 @@ smtp_server = "smtp.immerda.ch"
 
 account_email = "teko@fabianhirter.ch"
 
-#password = input("Type your password and press enter:")
-#api_key = input("Provide your API key:")
+password = input("Type your password and press enter:")
+api_key = input("Provide your API key:")
 
 mailbox = "INBOX"
 
 PUBLIC_KEY_FILE = '../public_key.asc'
 public_key_file_handler = open(PUBLIC_KEY_FILE, "r")
 public_key = public_key_file_handler.readlines()
+
 
 def get_latest_new_email():
     with imaplib.IMAP4_SSL(imap_server) as server:
@@ -51,7 +52,7 @@ def get_latest_new_email():
         # print the email body
         for part in email_message.walk():
             if part.get_content_type() == "text/plain":
-                body = part.get_payload(decode=True)
+                body = str(part.get_payload(decode=True))
                 return from_field, body
             else:
                 continue
@@ -60,7 +61,7 @@ def get_latest_new_email():
 def send_mail(message, receiver_email):
     context = ssl.create_default_context()
 
-    encrypted_message = encrypt_message(g_key, data)
+    #encrypted_message = encrypt_message(g_key, data)
 
     with smtplib.SMTP_SSL(smtp_server, smtp_port) as server:
         server.login(account_email, password)
@@ -108,5 +109,7 @@ def get_coordinates(address):
         print(f"Request failed with status code {response.status_code}")
 
 
-encrypted_message = encrypt_message("teko@fabianhirter.ch", "belpstrasse 37")
-print(encrypted_message)
+sender, address = get_latest_new_email()
+coordinates = get_coordinates(address)
+message = ''.join(str(coordinate) for coordinate in coordinates)
+send_mail(message, sender)
