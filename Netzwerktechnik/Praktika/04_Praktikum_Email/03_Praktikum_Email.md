@@ -1,8 +1,14 @@
 # Praktikum E-Mail
 
 ## Lernziele
+Die Studierenden können die Anwenderdienste für das Senden und Empfangen von Mails mit ihren Merkmalen  charakterisieren und einen Mailclient in der Praxis konfigurieren. 
 
-### Vorbereitung
+Die Studierenden sind in der Lage, Netzwerkanalysen mit entsprechenden Tools durchzuführen, die Ergebnisse zu analysieren und einfache Netzwerkfehler zu beheben. 
+
+Die Studierenden können die Aufgaben von HTTP nennen und den Ablauf der wichtigsten Funktionen beschreiben.
+
+
+## Vorbereitung
 Erstelle ein Login und einen API Key bei folgendem Dienst: 
 * [Openrouteservice](https://openrouteservice.org/dev/#/api-docs)
 
