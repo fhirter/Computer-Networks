@@ -70,7 +70,7 @@ def get_latest_new_email():
 
 ## E-Mail Senden
 - Nutze folgende Befehle der smtplib um E-Mails zu versenden. Konfiguriere die verwendeten Variablen entsprechend.
-- Verschlüssele die Nachricht mit einem PGP Public Key.
+- Verschlüssele die Nachricht mit einem PGP Public Key. Erstelle dazu ein persönliches Public/Private Key-Paar online oder mit gpg in der Konsole.
 
 ```python
 import smtplib
