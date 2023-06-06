@@ -38,13 +38,21 @@ Er wird nicht bewertet und es werden keine formellen Anforderungen gestellt.
 - Skizziere die TCP Verbindung der ersten HTTP-Anfrage.
 - Was Ändert sich in der Wireshark Aufzeichnungm, wenn eine Seite über HTTPS aufgerufen wird?
 
-## PyCharm HTTP Client
-### Vorbereitungen
-- Erstelle die HTTP Anfrage aus den vorherigen Aufgaben im HTTP Client von PyCharm.
-
-### Fragen und Aufgaben
-- Experimentiere mit den Header Feldern. Welche Werte können gesetzt werden? Wie reagiert der Server?
-
 ## cURL, wget
 - Erstelle dieselbe HTTP Anfrage auch mit den CLI Programmen `cURL` und `Wget`.
 - Speichere die Website in einer Datei.
+- Experimentiere mit den Header Feldern. Welche Werte können gesetzt werden? Wie reagiert der Server?
+
+
+## HTTP/2, Cache und Cookies
+### Vorbereitung
+- Öffne einen Browser (Chrome oder Firefox)
+- Öffne die Netzwerk-Entwicklertools und starte eine Netzwerkaufzeichnung.
+- Öffne die [Webseite der Schule](https://www.teko.ch) oder eine andere Webseite deiner Wahl.
+
+### Fragen und Aufgaben
+- Untersuche die Kommunikation bei ein- bzw. ausgeschaltetem Cache. Siehst du einen Unterschied?
+- HTTP/2 verspricht höhere Geschwindigkeiten im Vergleich zu HTTP/1.1. HTTP/3 soll diese weiter steigern. Erstelle eine kleine Statistik, um dies zu überprüfen.
+- Untersuche die gespeicherten Cookies. Versuche herauszufinden, wozu diese dienen.
+- Cookies werden oft genutzt, um den Login Zustand zu speichern. Untersuche, was passiert, wenn du die Cookies löscht. Mit welchem Cookie wird der Login-Zustand gespeichert? Wie funktioniert dies?
+
