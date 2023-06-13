@@ -8,12 +8,13 @@
 Starte eine Aufzeichnung mit Wireshark auf deinem default Ethernet Interface.
 
 ## Aufgabenstellung
-### DHCP
+### DHCP und NAT
 Untersuche mit Wireshark eine DHCP Kommunikation und beantworte folgende Fragen:
 - Welche IP-Adresse wurde vergeben?
-- In welchem Subnetz befindet sich die IP? 
+- In welchem Subnetz befindet sich die IP? Ist dies ein privates oder öffentliches Netz?
 - Welches Default Gateway wurde konfiguriert?
-- Welche(r) DNS-Server?
+- Welche DNS-Server wurden konfiguriert? Wieso werden oft mehrere DNS-Server konfiguriert?
+- Wie ist deine öffentliche IP-Adresse?
 
 Untersuche die Netzwerkkonfiguration von deinem Gerät mit `ifconfig` (macOS, Linux), `ipconfig` (Windows):
 - Über welche Netzwerkinterfaces verfügt dein Gerät? Identifiziere die Hardware- sowie WLAN-Schnittstelle.
@@ -29,3 +30,5 @@ DNS Auflösungen werden im Client zwischengespeichert, stelle deshalb sicher, da
 - Welchen Typ hat die DNS Nachricht?
 - Welche IP hat der Host?
 - Kannst du den DNS-Server für deinen Client auf einen öffentlichen ändern (z.B. 1.1.1.1 (cloudflare), 8.8.8.8 (google))?
+
+### NAT
