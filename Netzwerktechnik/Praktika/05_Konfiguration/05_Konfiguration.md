@@ -30,5 +30,3 @@ DNS Auflösungen werden im Client zwischengespeichert, stelle deshalb sicher, da
 - Welchen Typ hat die DNS Nachricht?
 - Welche IP hat der Host?
 - Kannst du den DNS-Server für deinen Client auf einen öffentlichen ändern (z.B. 1.1.1.1 (cloudflare), 8.8.8.8 (google))?
-
-### NAT
