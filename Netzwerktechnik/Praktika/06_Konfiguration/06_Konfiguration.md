@@ -2,7 +2,7 @@
 
 ## Lernziele
 
-- Die Studierenden können selbstständig ein Netzwerk aufbauen, installieren und nach Kundenwunsch konfigurieren.
+- Die Studierenden können selbstständig ein Netzwerk aufbauen, installieren und nach Kundenwunsch konfigurieren.
 
 ## Anforderungen an das Netzwerk
 
