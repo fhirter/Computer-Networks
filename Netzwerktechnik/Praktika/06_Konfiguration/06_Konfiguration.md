@@ -26,8 +26,8 @@
 
 ### Firewall
 - Keinen eingehenden Verbindungsaufbau im `192.168.0.0/23` Netz
-- Blockiert im `192.168.0.0/24` Netz sämtliche Verbindungen bis folgende Ausnahme:
-  - `192.168.0.10` lässt TCP Verbindungen auf Port 80 zu
+- Blockiert im `192.168.10.0/24` Netz sämtliche Verbindungen bis folgende Ausnahme:
+  - `192.168.10.10` lässt TCP Verbindungen auf Port 80 zu
 
 ## Default-Einstellungen
 
