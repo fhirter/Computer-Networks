@@ -33,7 +33,7 @@
 
 ### Raspberry PI
 - IP: DHCP
-- user: PI
+- user: pi
 - password: password
 
 ### EdgeRouter
