@@ -22,7 +22,7 @@
 ### DHCP
 - DHCP Server nur im `192.168.0.0/23` Netz
 - DHCP Range: `192.168.0.100` - `192.168.1.200`
-- Ein Raspberry PI mit statisch gemappter IP `192.168.0.20/23`
+- Ein Raspberry PI mit statisch gemappter IP `192.168.0.100/23`
 
 ### Firewall
 - Keinen eingehenden Verbindungsaufbau im `192.168.0.0/23` Netz
