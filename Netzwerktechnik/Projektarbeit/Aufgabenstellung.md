@@ -34,7 +34,7 @@ Die Fragen müssen vorbereitet sein und sowohl Fragen als auch Antworten werden 
 
 ## Zeitplan
 - Semesterwoche 9: Abgabe Einführung
-- Semesterwoche 18: Abgabe Hauptteil und Schlussfolgerungen
+- Semesterwoche 17: Abgabe Hauptteil und Schlussfolgerungen
 - Semesterwoche 19: Präsentationen und Fragen der anderen Gruppe beantworten 
 
 Abgaben jeweils bis Sonntag-Abend als PDF per E-Mail an den Dozenten.
