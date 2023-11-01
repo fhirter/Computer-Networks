@@ -1,7 +1,6 @@
 # Praktikum Analysetools
 
 ## Lernziele
-
 Die Studierenden sind in der Lage, Netzwerkanalysen mit entsprechenden Tools durchzuführen, die Ergebnisse zu analysieren und einfache Netzwerkfehler zu beheben. 
 
 ## Aufgabenstellung
@@ -23,12 +22,12 @@ Er wird nicht bewertet, es werden jedoch folgende formellen Anforderungen gestel
 - Öffne die [erste Webseite](http://info.cern.ch/hypertext/WWW/TheProject.html).
 
 ### Fragen und Aufgaben
-- Untersuche und Dokumentiere die Netzwerk-Analysemöglichkeiten, die der Browser bietet.
+- Untersuche und Dokumentiere die [Netzwerk-Analysemöglichkeiten](https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/), die der Browser bietet.
 - Vergleiche die Anfrage und Antwort der oben genannten Website mit einer modernen Website.
 
 ## Wireshark
 ### Vorbereitungen
-- Öffne Wireshark und starte eine Aufzeichnung
+- Öffne [Wireshark](https://www.wireshark.org/) und starte eine Aufzeichnung
 
 ### Fragen und Aufgaben
 - Untersuche und Dokumentiere die Netzwerk-Analysemöglichkeiten, die Wireshark bietet.
@@ -39,10 +38,10 @@ Er wird nicht bewertet, es werden jedoch folgende formellen Anforderungen gestel
   - Welche Adressen und Ports sind gesetzt?
 
 ## cURL, wget
-- Erstelle dieselbe HTTP Anfrage an die [erste Webseite](http://info.cern.ch/hypertext/WWW/TheProject.html) auch mit den CLI Programmen `cURL` und `Wget`.
-- Welche Möglichkeiten bieten die beiden Tools?
+- Erstelle dieselbe HTTP Anfrage an die [erste Webseite](http://info.cern.ch/hypertext/WWW/TheProject.html) auch mit den CLI Programmen [`cURL`](https://curl.se/) und [`Wget`](https://www.gnu.org/software/wget/).
+- Welche Möglichkeiten bieten die beiden Tools? Wie unterscheiden sie sich?
 - Speichere die Website in einer Datei.
 
 ## PyCharm HTTP Client
-- Erstelle dieselbe HTTP Anfrage an die [erste Webseite](http://info.cern.ch/hypertext/WWW/TheProject.html) mit dem HTTP Client von PyCharm.
+- Erstelle dieselbe HTTP Anfrage an die [erste Webseite](http://info.cern.ch/hypertext/WWW/TheProject.html) mit dem [HTTP Client von PyCharm](https://www.jetbrains.com/help/pycharm/http-client-in-product-code-editor.html).
 - Welche Möglichkeiten bietet dieses Tool?
