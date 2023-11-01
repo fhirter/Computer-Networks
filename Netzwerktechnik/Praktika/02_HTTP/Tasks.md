@@ -36,7 +36,7 @@ Er wird nicht bewertet und es werden keine formellen Anforderungen gestellt.
 - Untersuche die Request und Response Header. Erkläre die einzelnen Bestandteile der Header und deren Bedeutung.
 - Über welche Sockets läuft die Verbindung?
 - Skizziere die TCP Verbindung der ersten HTTP-Anfrage.
-- Was Ändert sich in der Wireshark Aufzeichnungm, wenn eine Seite über HTTPS aufgerufen wird?
+- Was Ändert sich in der Wireshark Aufzeichnung, wenn eine Seite über HTTPS aufgerufen wird?
 
 ## cURL, wget
 - Erstelle dieselbe HTTP Anfrage auch mit den CLI Programmen `cURL` und `Wget`.
