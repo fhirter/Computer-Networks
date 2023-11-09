@@ -3,6 +3,7 @@
 ## Lernziele
 
 Die Studierenden können Netzwerktechnologien und -trends kritisch bewerten und ihre Relevanz für verschiedene Anwendungsfälle einschätzen.
+
 Die Studierenden kennen die Unterschiede von TCP/IP und ISO/OSI Modellen und die Aufgaben der einzelnen Schichten.
 
 ## Aufgabenstellung
