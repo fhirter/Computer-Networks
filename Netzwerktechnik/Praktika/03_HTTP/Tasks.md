@@ -32,7 +32,7 @@ Nutze für die Beantwortung der Fragen geeignete Tools (Browser, Wireshark, PyCh
 - Über welche Sockets läuft die Verbindung?
 
 ### Header
-- Welche Datentypen akzeptiert der Browser?
+- Welche Dateitypen akzeptiert der Browser?
 - Untersuche die Request und Response Header. Erkläre die einzelnen Bestandteile der Header und deren Bedeutung.
 - Experimentiere mit den Header Feldern des Requests. Welche Werte können gesetzt werden? Wie reagiert der Server?
 
