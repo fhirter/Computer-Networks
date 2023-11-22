@@ -40,8 +40,13 @@ Nutze für die Beantwortung der Fragen geeignete Tools (Browser, Wireshark, PyCh
 - Untersuche die Kommunikation bei ein- bzw. ausgeschaltetem Cache. Siehst du einen Unterschied?
 
 ### Cookies
-- Untersuche die gespeicherten Cookies. Versuche herauszufinden, wozu diese dienen.
-- Cookies werden oft genutzt, um den Login Zustand zu speichern. Untersuche, was passiert, wenn du die Cookies löscht. Mit welchem Cookie wird der Login-Zustand gespeichert? Wie funktioniert dies?
+- Untersuche die gespeicherten Cookies von einem Webshob (z.B. [digitec.ch](https://www.digitec.ch)) Versuche herauszufinden, wozu diese dienen.
+- Cookies werden oft genutzt, um den Login Zustand oder einen Warenkorb zu speichern. 
+  Untersuche, was passiert, wenn du die Cookies löscht.
+  Mit welchem Cookie wird der Login-Zustand gespeichert? Wie funktioniert dies?
 
 ### HTTP/2 und HTTP/3
 - HTTP/2 verspricht höhere Geschwindigkeiten im Vergleich zu HTTP/1.1. HTTP/3 soll diese weiter steigern. Erstelle eine kleine Statistik, um dies zu überprüfen.
+- Um Head of LIne (HOL) blocking zu vermeiden öffnen Browser mehrere TCP Verbindungen für eine Website.
+  Untersuche mit verschiedenen Websites, wieviele TCP Verbindungen ein Browser öffnet.
+  Vergleiche auch den Unterschied zwischen HTTP/1.1 und HTTP/2 Verbindungen.
