@@ -47,6 +47,5 @@ Nutze für die Beantwortung der Fragen geeignete Tools (Browser, Wireshark, PyCh
 
 ### HTTP/2 und HTTP/3
 - HTTP/2 verspricht höhere Geschwindigkeiten im Vergleich zu HTTP/1.1. HTTP/3 soll diese weiter steigern. Erstelle eine kleine Statistik, um dies zu überprüfen.
-- Um Head of LIne (HOL) blocking zu vermeiden öffnen Browser mehrere TCP Verbindungen für eine Website.
-  Untersuche mit verschiedenen Websites, wieviele TCP Verbindungen ein Browser öffnet.
-  Vergleiche auch den Unterschied zwischen HTTP/1.1 und HTTP/2 Verbindungen.
+- Untersuche mit verschiedenen Websites, wie viele TCP Verbindungen ein Browser bei HTTP/1.1 und HTTP/2 Verbindungen öffnet.
+- Untersuche, wie bei HTTP/3 UDP verwendet wird.
