@@ -31,7 +31,11 @@ describe('GET /users', () => {
 });
 
 describe('POST /user', () => {
-    
+    it('should return 201 created', (done) => {
+        request(url)
+            .post("/users")
+            .expect(201, done)
+    });
 });
 
 
