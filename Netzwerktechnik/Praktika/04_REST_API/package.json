@@ -10,9 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "supertest": "6.3.3"
-  },
-  "dependencies": {
+    "supertest": "6.3.3",
     "jest": "^29.7.0"
   }
 }

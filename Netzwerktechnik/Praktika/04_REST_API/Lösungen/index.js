@@ -7,6 +7,7 @@ const user = {
 }
 
 app.get('/users', (req, res) => {
+  res.status(200);
   res.send(user);
 })
 
