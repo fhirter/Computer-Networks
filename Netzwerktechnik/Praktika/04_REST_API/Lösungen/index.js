@@ -1,28 +1,4 @@
-/**
- * @swagger
- * /users:
- *   get:
- *     summary: Returns a list of users
- *     responses:
- *       200:
- *         description: A list of users
- *         content:
- *           application/json:
- *             schema:
- *               type: array
- *               items:
- *                 type: object
- *                 properties:
- *                   name:
- *                     type: string
- *                   email:
- *                     type: string
- *   post:
- *     summary: create a new user
- *     responses:
- *       201:
- *         description: A new user has been created
- */
+
 
 const express = require('express');
 const app = express();
@@ -54,12 +30,41 @@ app.use(
     swaggerUi.setup(specs)
 );
 
+
+/**
+ * @openapi
+ * /users:
+ *   get:
+ *     summary: Returns a list of users
+ *     responses:
+ *       200:
+ *         description: A list of users
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   name:
+ *                     type: string
+ *
+ */
 app.get('/users', (req, res) => {
     res.status(200);
     res.send([user]);
 })
 
-app.post('/users/{user}', (req, res) => {
+/**
+ * @openapi
+ * /users:
+ *   post:
+ *     summary: Create a new user
+ *     responses:
+ *       201:
+ *         description: A new user has been created
+ */
+app.post('/users/', (req, res) => {
     res.status(201);
     res.send();
 })

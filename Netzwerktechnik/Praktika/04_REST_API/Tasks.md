@@ -25,15 +25,19 @@ npm install
 npm run test
 ```
 
+### Weiterführende Aufgaben
 
+Erweitere die API mit einem Cache.
 
-### Informationen
+Erweitere die API mit URL Referenzen (`_links`) auf die verfügbaren Ressourcen (HATEOAS).
 
-Die [OpenAPI Specification](https://de.wikipedia.org/wiki/OpenAPI) ist ein weit verbreiteter Standard zur Dokumentation
-von REST-APIs.
+## Informationen
+
+### OpenAPI
+
+Die [OpenAPI Specification](https://de.wikipedia.org/wiki/OpenAPI) ist ein weit verbreiteter Standard zur Dokumentation von REST-APIs.
 Mit [SwaggerUI](https://swagger.io/tools/swagger-ui/) kann die Spezifikation intuitiv als Webseite dargestellt werden.
-Mit [Swagger JS Doc](https://github.com/Surnet/swagger-jsdoc) kann die OpenAPI Spezifikation anhand des Express Code
-generiert werden.
+Mit [Swagger JS Doc](https://github.com/Surnet/swagger-jsdoc) kann die OpenAPI Spezifikation anhand des Express Code generiert werden.
 So wird sichergestellt, dass Dokumentation und Code synchron sind.
 
 ### Tech-Stack der Lösungen

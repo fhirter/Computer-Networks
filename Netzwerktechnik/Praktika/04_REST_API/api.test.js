@@ -22,12 +22,16 @@ describe('GET /users', () => {
         getUsers.expect(200, done)
     });
 
-    it('should return a user object', (done) => {
+    it('should return a user array', (done) => {
         getUsers.then(response => {
-            expect(response.body.name).toBeDefined();
+            expect(response.body).toContainEqual(expect.anything());
             done();
         });
     });
+});
+
+describe('POST /user', () => {
+    
 });
 
 
