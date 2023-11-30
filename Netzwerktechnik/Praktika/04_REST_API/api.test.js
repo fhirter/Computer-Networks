@@ -30,7 +30,7 @@ describe('GET /users', () => {
     });
 });
 
-describe('POST /user', () => {
+describe('POST /users', () => {
     it('should return 201 created', (done) => {
         request(url)
             .post("/users")
