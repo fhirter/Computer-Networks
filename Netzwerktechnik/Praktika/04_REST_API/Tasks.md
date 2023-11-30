@@ -25,6 +25,12 @@ npm install
 npm run test
 ```
 
+Das Vorgehen, die Antworten und Erkenntnisse sollen in einem kurzen Bericht festgehalten werden.
+Dieser Bericht ist am Schluss zusammen mit dem Code per E-Mail an den Dozenten einzureichen.
+Er wird nicht bewertet, es werden jedoch folgende formellen Anforderungen gestellt:
+- Dateiformat: [Markdown](https://www.markdownguide.org/) oder daraus [generiertes PDF](https://pandoc.org/).
+- Diagramme: [PlantUML](https://plantuml.com/de/), [Mermaid](https://mermaid.js.org/) o.ä.
+
 ### Weiterführende Aufgaben
 
 Erweitere die API mit einem Cache.
