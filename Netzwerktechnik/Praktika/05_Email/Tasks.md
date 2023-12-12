@@ -2,13 +2,11 @@
 
 ## Lernziele
 
-Die Studierenden können die Anwenderdienste für das Senden und Empfangen von Mails mit ihren Merkmalen charakterisieren
+- Die Studierenden können die Anwenderdienste für das Senden und Empfangen von Mails mit ihren Merkmalen charakterisieren
 und einen Mailclient in der Praxis konfigurieren.
-
-Die Studierenden sind in der Lage, Netzwerkanalysen mit entsprechenden Tools durchzuführen, die Ergebnisse zu
+- Die Studierenden sind in der Lage, Netzwerkanalysen mit entsprechenden Tools durchzuführen, die Ergebnisse zu
 analysieren und einfache Netzwerkfehler zu beheben.
-
-Die Studierenden können die Aufgaben von HTTP nennen und den Ablauf der wichtigsten Funktionen beschreiben.
+- Die Studierenden können die Aufgaben von HTTP nennen und den Ablauf der wichtigsten Funktionen beschreiben.
 
 ## Vorbereitung
 
@@ -19,27 +17,32 @@ Erstelle ein Login und einen API Key bei folgendem Dienst:
 ## Aufgabenstellung
 
 Schreib in Python eine kleine Applikation, die per E-Mail eine Adresse in Koordinaten auflöst.
-Es soll eine verschlüsselte Mail geschickt werden können welche eine Adressen enthält:
+Es soll eine verschlüsselte Mail geschickt werden können, welche eine Adresse enthält:
 
 ```
 Freiburgstrasse 20, 3010 Bern
 ```
 
-Anhand von diesen Informationen soll die Applikation die Koordinaten abfragen und per verschlüsselter E-Mail
-zurückschicken.
+Anhand von diesen Informationen soll die Applikation die Koordinaten abfragen und per E-Mail zurückschicken.
+
+Implementiere optional eine mit PGP verschlüsselte Kommunikation.
 
 Nutze einen eigenen Mailserver oder den zur Verfügung gestellten. Dessen Verbindungsangaben findest du hier:
 https://docs.immerda.ch/de/services/email/clients/
 
-Der Erkenntnisgewinn ist wichtiger als eine vollständige Lösung. Halte deine Erkenntnisse fest!
+Der Erkenntnisgewinn ist wichtiger als eine vollständige Lösung.
+Das Vorgehen, die Antworten und Erkenntnisse sollen in einem kurzen Bericht festgehalten werden.
+Dieser Bericht ist am Schluss zusammen mit dem Code **per E-Mail an den Dozenten** einzureichen.
+Er wird nicht bewertet, es werden jedoch folgende formellen Anforderungen gestellt:
+- Dateiformat: [Markdown](https://www.markdownguide.org/) oder daraus [generiertes PDF](https://pandoc.org/).
+- Diagramme: [PlantUML](https://plantuml.com/de/), [Mermaid](https://mermaid.js.org/) o.ä.
 
 **Vorsicht: Secrets (Passwörter, Private Keys) dürfen nie in der Versionsverwaltung erfasst werden!**
 Falls dies trotzdem passiert, muss das betroffene Secret sofort geändert werden.
 
 ## E-Mail Empfangen
 
-- Empfange die neuste ungelesene Mail und den Absender mit IMAP.
-- Entschlüssle die Nachricht mit dem PGP Public Key.
+Empfange die neuste ungelesene Mail mit IMAP.
 
 ```python
 import email
@@ -94,8 +97,34 @@ def send_mail(message, receiver_email):
         server.sendmail(account_email, receiver_email, message)
 ```
 
+## REST API Abfragen
+
+- Erstelle eine Anfrage mit Insomnia oder cURL um die Koordinaten für eine Adresse zu
+  erhalten ([openrouteservice.org/dev/#/api-docs/geocode](https://openrouteservice.org/dev/#/api-docs/geocode/search/get)).
+- Erstelle eine Anfrage mit Insomnia oder cURL um die Route zwischen diesen beiden Koordinaten zu
+  erhalten. ([openrouteservice.org/dev/#/api-docs/v2/directions](https://openrouteservice.org/dev/#/api-docs/v2/directions/{profile}/get)).
+- Übertrage die beiden API Anfragen in Python nach folgendem Code Beispiel.
+
+```python
+import requests
+
+
+def get_coordinates(address):
+    url = f"<endpoint>?<parameter>={< value >}"
+
+    response = requests.get(url)
+
+    if response.status_code == 200:
+        data = response.json()
+        return data["features"][0]["geometry"]["coordinates"]
+    else:
+        print(f"Request failed with status code {response.status_code}")
+```
+
+## Verschlüsselung
 - Verschlüssele die Nachricht mit einem PGP Public Key. Erstelle dazu ein persönliches Public/Private Key-Paar online
   oder mit gpg in der Konsole.
+- Entschlüssle die Nachricht mit dem PGP Private Key.
 
 ```python
 import subprocess
@@ -129,28 +158,4 @@ def encrypt_message(recipient_mail, message):
         os.remove(temp_message_path_encrypted)
 
         return encrypted_message
-```
-
-## REST API Abfragen
-
-- Erstelle eine Anfrage mit Insomnia oder cURL um die Koordinaten für eine Adresse zu
-  erhalten ([openrouteservice.org/dev/#/api-docs/geocode](https://openrouteservice.org/dev/#/api-docs/geocode/search/get)).
-- Erstelle eine Anfrage mit Insomnia oder cURL um die Route zwischen diesen beiden Koordinaten zu
-  erhalten. ([openrouteservice.org/dev/#/api-docs/v2/directions](https://openrouteservice.org/dev/#/api-docs/v2/directions/{profile}/get)).
-- Übertrage die beiden API Anfragen in Python nach folgendem Code Beispiel.
-
-```python
-import requests
-
-
-def get_coordinates(address):
-    url = f"<endpoint>?<parameter>={< value >}"
-
-    response = requests.get(url)
-
-    if response.status_code == 200:
-        data = response.json()
-        return data["features"][0]["geometry"]["coordinates"]
-    else:
-        print(f"Request failed with status code {response.status_code}")
 ```
