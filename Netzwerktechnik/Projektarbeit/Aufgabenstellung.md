@@ -1,4 +1,4 @@
-# Bewertete Übung «Parallele und verteilte Systeme»
+# Projektarbeit "Netzwerktechnik"
 
 ## Aufgabenstellung
 In Zweier- oder Dreiergruppen erarbeiten die Studierenden einen Aufsatz und eine Präsentation zu einem von mehreren gegebenen Themen.
@@ -7,6 +7,7 @@ Ziel ist es, ein verteiltes System zu analysieren, Vor- und Nachteile zu evaluie
 ## Aufsatz
 Der Aufsatz behandelt eine Frage zu einem Thema im Bereich «Verteilte Systeme». 
 Die Studierenden können ein Thema (siehe unten), in Absprache mit den anderen Gruppen, frei wählen.
+
 Folgende Teile sollten vorkommen:
 
 - Einführung
