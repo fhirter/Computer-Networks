@@ -1,14 +1,13 @@
 # Projektarbeit "Netzwerktechnik"
 
 ## Aufgabenstellung
-In Zweier- oder Dreiergruppen erarbeiten die Studierenden einen Aufsatz und eine Präsentation zu einem von mehreren gegebenen Themen.
-Ziel ist es, ein verteiltes System zu analysieren, Vor- und Nachteile zu evaluieren und die im Unterricht behandelten Themen anzuwenden.
+In Zweier- oder Dreiergruppen bearbeiten die Studierenden eines von mehreren gegebenen Themen.
+Ziel ist es anhand von einer konkreten Aufgabenstellung die im Unterricht behandelten Themen anzuwenden.
 
-## Aufsatz
-Der Aufsatz behandelt eine Frage zu einem Thema im Bereich «Verteilte Systeme». 
 Die Studierenden können ein Thema (siehe unten), in Absprache mit den anderen Gruppen, frei wählen.
 
-Folgende Teile sollten vorkommen:
+## Bericht
+Im Bericht sollten folgende Teile vorkommen:
 
 - Einführung
   - Ausgangslage und Problemstellung
