@@ -8,6 +8,7 @@ import subprocess
 
 import requests
 
+from nio import AsyncClient, MatrixRoom, RoomMessageText
 
 imap_port = 993
 imap_server = "imap.immerda.ch"
@@ -61,7 +62,7 @@ def get_latest_new_email():
 def send_mail(message, receiver_email):
     context = ssl.create_default_context()
 
-    #encrypted_message = encrypt_message(g_key, data)
+    # encrypted_message = encrypt_message(g_key, data)
 
     with smtplib.SMTP_SSL(smtp_server, smtp_port) as server:
         server.login(account_email, password)
@@ -107,6 +108,34 @@ def get_coordinates(address):
         return data["features"][0]["geometry"]["coordinates"]
     else:
         print(f"Request failed with status code {response.status_code}")
+
+
+async def setup_matrix_client():
+    client = AsyncClient("https://matrix.example.org", "@alice:example.org")
+
+    client.add_event_callback(message_callback, RoomMessageText)
+
+    print(await client.login("my-secret-password"))
+
+    # "Logged in as @alice:example.org device id: RANDOMDID"
+
+    # If you made a new room and haven't joined as that user, you can use
+
+    # await client.join("your-room-id")
+
+    await client.room_send(
+
+        # Watch out! If you join an old room you'll see lots of old messages
+
+        room_id="!my-fave-room:example.org",
+
+        message_type="m.room.message",
+
+        content={"msgtype": "m.text", "body": "Hello world!"},
+
+    )
+
+    await client.sync_forever(timeout=30000)  # milliseconds
 
 
 sender, address = get_latest_new_email()
