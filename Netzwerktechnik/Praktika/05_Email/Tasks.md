@@ -159,7 +159,7 @@ def get_coordinates(address):
         print(f"Request failed with status code {response.status_code}")
 ```
 
-## Verschlüsselung
+### Verschlüsselung
 
 ```python
 import subprocess
