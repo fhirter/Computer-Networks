@@ -23,14 +23,6 @@ Untersuche die Netzwerkkonfiguration von deinem Gerät mit `ifconfig` (macOS, Li
 - Welches Subnetz ist konfiguriert?
 - Kannst du die IPv4 und IPv6 Adresse manuell ändern? Was musst du berücksichtigen, dass du noch Internetzugriff hast?
 
-### DNS
-Untersuche mit Wireshark eine DNS Kommunikation und beantworte folgende Fragen.
-DNS Auflösungen werden im Client zwischengespeichert, stelle deshalb sicher, dass die Aufzeichnung mindestens 10min läuft.
-- Welcher DNS-Server hat geantwortet? Wer betreibt diesen Server?
-- Welchen Typ hat die DNS Nachricht?
-- Welche IP hat der Host?
-- Kannst du den DNS-Server für deinen Client auf einen öffentlichen ändern (z.B. 1.1.1.1 (cloudflare), 8.8.8.8 (google))?
-
 ### Netzwerkkonfiguration
 Konfiguriere ein Netzwerk gemäss den folgenden Anforderungen.
 
