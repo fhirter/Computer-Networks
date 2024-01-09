@@ -1,6 +1,23 @@
 # DNS - The Internet Directory Service
 
-## Whois Datenbanken
+## Lernziele
+
+* Die Studierenden kennen die Internetprotokolle DNS, [...] und verstehen deren Funktionsweise.
+* Die Studierenden können Netzwerkprobleme identifizieren, analysieren und geeignete Lösungsstrategien entwickeln.
+* Die Studierenden sind in der Lage, die im Kurs erlernten Techniken und Konzepte in realen Netzwerkumgebungen
+  umzusetzen.
+
+## Aufgabenstellung
+Die Aufgaben sind bewusst eher umfangreich.
+Es ist wichtiger, dass die Aufgaben gründlich gemacht werden, als dass alle Aufgaben erledigt werden.
+
+Die Antworten sollen in einem kurzen Bericht festgehalten werden.
+**Dieser Bericht ist am Schluss per E-Mail an den Dozenten einzureichen.**
+Er wird nicht bewertet, es werden jedoch folgende formellen Anforderungen gestellt:
+- Dateiformat: [Markdown](https://www.markdownguide.org/) und daraus [generiertes PDF](https://pandoc.org/).
+- Diagramme: [PlantUML](https://plantuml.com/de/), [Mermaid](https://mermaid.js.org/) o.ä.
+
+### Whois Datenbanken
 
 1. Verwende verschiedene Whois-Datenbanken im Internet, um die Namen von zwei DNS-Servern zu ermitteln. Gib an,
    welche Whois-Datenbanken du verwendet hast.
@@ -15,7 +32,7 @@
    dem Start eines Angriffs auszuspionieren.
 6. Diskutiere, warum Whois-Datenbanken öffentlich zugänglich sein sollten.
 
-## dig
+### dig
 
 In dieser Aufgabe verwenden wir das nützliche Werkzeug `dig`, das auf Unix- und Linux-Hosts verfügbar ist, um die
 Hierarchie der DNS-Server zu erkunden. Denke daran, dass in Abbildung 2.19 ein DNS-Server eine DNS-Anfrage an einen
@@ -28,14 +45,14 @@ dann die folgenden Fragen.
    in der Delegationskette, die Ihre Anfrage beantworten.
 2. Wiederhole Teil (1) für mehrere beliebte Webseiten, wie google.com, yahoo.com oder amazon.com.
 
-## DNS Caching
+### DNS Caching
 
 Nehmen wir an, dass unsere Schule einen lokalen DNS-Server für alle Computer, die mit dem Schul-Netzwerk verbinden sind,
 hat. Kann ohne spezielle Rechte (Netzwerk-/Systemadministrator) festgestellt werden, ob eine externe Webseite
 wahrscheinlich von einem Computer im Netzwerk vor ein paar Sekunden aufgerufen wurde?
 Erkläre und schreibe ein Script, um dies festzustellen!
 
-## Wireshark
+### Wireshark
 
 Untersuche mit Wireshark eine DNS Kommunikation und beantworte folgende Fragen.
 DNS Auflösungen werden im Client zwischengespeichert, stelle deshalb sicher, dass die Aufzeichnung mindestens 10min
