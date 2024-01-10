@@ -8,6 +8,7 @@
   umzusetzen.
 
 ## Aufgabenstellung
+
 Die Aufgaben sind bewusst eher umfangreich.
 Es ist wichtiger, dass die Aufgaben gründlich gemacht werden, als dass alle Aufgaben erledigt werden.
 
@@ -16,6 +17,7 @@ Zum Erreichen der Lernziele sollten die Aufgaben "Whois Datenbanken", "dig" und 
 Die Antworten sollen in einem kurzen Bericht festgehalten werden.
 **Dieser Bericht ist am Schluss per E-Mail an den Dozenten einzureichen.**
 Er wird nicht bewertet, es werden jedoch folgende formellen Anforderungen gestellt:
+
 - Dateiformat: [Markdown](https://www.markdownguide.org/) und daraus [generiertes PDF](https://pandoc.org/).
 - Diagramme: [PlantUML](https://plantuml.com/de/), [Mermaid](https://mermaid.js.org/) o.ä.
 
@@ -37,9 +39,9 @@ DNS-Server weiter unten in der Hierarchie delegiert, indem er dem DNS-Client den
 DNS-Servers zurücksendet. Lies zuerst die [Handbuchseite für `dig`](https://linux.die.net/man/1/dig) und beantworte
 dann die folgenden Fragen.
 
-1. Beginne mit einem Root-DNS-Server (von einem der Root-Server [[a-m].root-servers.net)](http://a.root-servers.net/).
-   Initiiere eine Abfrage für die IP-Adresse des Webservers der Schule mit dig. Zeige die Liste der Namen der DNS-Server
-   in der Delegationskette, die Ihre Anfrage beantworten.
+1. Beginne mit einem Root-DNS-Server ([[a-m].root-servers.net)](http://a.root-servers.net/).
+   Schicke eine Abfrage für die IP-Adresse des Webservers der Schule mit dig. Iteriere durch die Nameserver, bis du
+   die IP-Adresse des Webhosts der Webseite der Schule hast.
 2. Wiederhole Teil (1) für mehrere beliebte Webseiten, wie google.com, yahoo.com oder amazon.com.
 
 ### Wireshark
@@ -63,4 +65,5 @@ Erkläre und schreibe ein Script, um dies festzustellen!
 
 ### Angriffe
 
-Wie kann DNS verwendet werden, um einen Man-in-the-Middle Angriff durchzuführen?
+1. Wie kann DNS verwendet werden, um einen Man-in-the-Middle Angriff durchzuführen? 
+2. Wie können DNS Angriffe vermieden werden?
