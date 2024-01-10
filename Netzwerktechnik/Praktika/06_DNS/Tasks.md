@@ -60,3 +60,7 @@ Nehmen wir an, dass unsere Schule einen lokalen DNS-Server für alle Computer, d
 hat. Kann ohne spezielle Rechte (Netzwerk-/Systemadministrator) festgestellt werden, ob eine externe Webseite
 wahrscheinlich von einem Computer im Netzwerk vor ein paar Sekunden aufgerufen wurde?
 Erkläre und schreibe ein Script, um dies festzustellen!
+
+### Angriffe
+
+Wie kann DNS verwendet werden, um einen Man-in-the-Middle Angriff durchzuführen?
