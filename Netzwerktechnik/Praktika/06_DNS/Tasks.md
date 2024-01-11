@@ -34,7 +34,10 @@ Er wird nicht bewertet, es werden jedoch folgende formellen Anforderungen gestel
 ### dig
 
 In dieser Aufgabe verwenden wir das nützliche Werkzeug `dig`, das auf Unix- und Linux-Hosts verfügbar ist, um die
-Hierarchie der DNS-Server zu erkunden. Denke daran, dass in Abbildung 2.19 ein DNS-Server eine DNS-Anfrage an einen
+Hierarchie der DNS-Server zu erkunden. Unter Windows kann
+ein [Online-Interface](https://toolbox.googleapps.com/apps/dig/) für dig genutzt werden.
+
+Denke daran, dass in Abbildung 2.19 ein DNS-Server eine DNS-Anfrage an einen
 DNS-Server weiter unten in der Hierarchie delegiert, indem er dem DNS-Client den Namen dieses untergeordneten
 DNS-Servers zurücksendet. Lies zuerst die [Handbuchseite für `dig`](https://linux.die.net/man/1/dig) und beantworte
 dann die folgenden Fragen.
@@ -65,5 +68,5 @@ Erkläre und schreibe ein Script, um dies festzustellen!
 
 ### Angriffe
 
-1. Wie kann DNS verwendet werden, um einen Man-in-the-Middle Angriff durchzuführen? 
+1. Wie kann DNS verwendet werden, um einen Man-in-the-Middle Angriff durchzuführen?
 2. Wie können DNS Angriffe vermieden werden?
