@@ -38,3 +38,12 @@ google.ch
 - `dig @a.root-servers.net teko.ch` -> `ch.			172800	IN	NS	b.nic.ch.`
 - `dig @a.nic.ch teko.ch` -> `teko.ch.		3600	IN	NS	dns1.go4web.ch.`
 - `dig @dns1.go4web.ch teko.ch` -> `teko.ch.		3600	IN	A	94.126.23.139`
+
+## DNS Caching
+Hier wird der lokale Router als DNS Cache verwendet.
+Domains, die im Cache vorhanden sind, werden in ca 50ms aufgelöst.
+![img.png](DNS_Cache_hit.png)
+
+Hier wurde eine Domain angefragt, die vermutlich nicht im Cache vorhanden war und deshalb 175ms zur Auflösung benötigt 
+hat.
+![img.png](DNS_Cache_miss.png)
