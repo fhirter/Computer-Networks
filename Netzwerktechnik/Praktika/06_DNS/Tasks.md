@@ -26,7 +26,7 @@ Er wird nicht bewertet, es werden jedoch folgende formellen Anforderungen gestel
 1. Verwende verschiedene Whois-Datenbanken im Internet, um die Namen von zwei DNS-Servern zu ermitteln. Gib an,
    welche Whois-Datenbanken du verwendet hast.
 2. Führe mit nslookup auf deinem lokalen Host DNS-Abfragen für drei DNS-Server durch: Den lokalen DNS-Server und
-   die zwei DNS-Server, die du in Teil (2) gefunden hast. Versuche Abfragen für Typ A, NS und MX-Einträge. Fasse
+   die zwei DNS-Server, die du in Teil (1) gefunden hast. Versuche Abfragen für Typ A, NS und MX-Einträge. Fasse
    die Ergebnisse zusammen.
 3. Verwende die [RIPE-Whois-Datenbank](https://apps.db.ripe.net/db-web-ui/query), um den IP-Adressbereich zu
    ermitteln, der vom Provider der Schulwebsite verwendet wird.
