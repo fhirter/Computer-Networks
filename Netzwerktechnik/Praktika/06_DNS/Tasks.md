@@ -68,5 +68,5 @@ Erkläre und schreibe ein Script, um dies festzustellen!
 
 ### Angriffe
 
-1. Wie kann DNS verwendet werden, um einen Man-in-the-Middle Angriff durchzuführen?
+1. Wie kann DNS verwendet werden, um einen Person-in-the-Middle Angriff durchzuführen?
 2. Wie können DNS Angriffe vermieden werden?
