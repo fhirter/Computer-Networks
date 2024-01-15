@@ -39,6 +39,15 @@ google.ch
 - `dig @a.nic.ch teko.ch` -> `teko.ch.		3600	IN	NS	dns1.go4web.ch.`
 - `dig @dns1.go4web.ch teko.ch` -> `teko.ch.		3600	IN	A	94.126.23.139`
 
+## Wireshark
+
+- Es antwortet hier jeweils mein Router, der die Adressen im Cache hat.
+- Type `A` also eine Auflösung eines Domain Names auf eine IP Adresse
+- `23.54.112.17`
+
+![img.png](dns_request.png)
+![img.png](dns_response.png)
+
 ## DNS Caching
 Hier wird der lokale Router als DNS Cache verwendet.
 Domains, die im Cache vorhanden sind, werden in ca 50ms aufgelöst.
