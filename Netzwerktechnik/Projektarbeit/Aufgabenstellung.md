@@ -12,14 +12,13 @@ Im Bericht sollten folgende Teile vorkommen:
 - Einführung
   - Ausgangslage und Problemstellung
   - Zielsetzung
-  - Material und Methoden
-- Hauptteil
+- Material und Methoden
+- Ergebnisse
   - Variantenentscheid
-  - Diskussion
-- Schlussfolgerungen
-  - Empfehlung und Ausblick
-  - Reflexion
-  - Quellen
+- Diskussion
+- Empfehlung und Ausblick
+- Reflexion
+- Quellen
 
 Die Erläuterungen der Kapitel befinden sich im Dokument "[Anleitung technischer Bericht](AnleitungTechnischerBericht.pdf)".
 
@@ -41,15 +40,23 @@ Abgaben jeweils bis Sonntag-Abend als PDF per E-Mail an den Dozenten.
 
 ## Bewertung
 Aufsatz und Präsentation gemäss folgendem Bewertungsraster: 
-- Einführung (Gruppenbewertung): 10 Punkte
-- Hauptteil (Gruppenbewertung): 40 Punkte
-- Schlussfolgerungen (Gruppenbewertung): 20 Punkte
-- Individuelle Fragen (Einzelbewertung): 10 Punkte
-- Individuelle Antworten (Einzelbewertung): 10 Punkte 
+Bericht (Gruppenbewertung)
+- Ausgangslage und Problemstellung
+- Zielsetzung
+- Material und Methoden
+- Ergebnisse
+- Diskussion
+- Empfehlung und Ausblick
+- Reflexion
+
+Präsentation:
+- Individuelle Fragen (Einzelbewertung)
+- Individuelle Antworten (Einzelbewertung)
 
 Umfang: ca 2500 Wörter.
 
-Note: Gesamtpunkte/90*5+1, gerundet auf 0.1.
+Jeder Punkt der Liste oben gibt 10 Punkte, damit ist das total 90 Punkte.
+Die Note berechnet sich folgendermassen: Gesamtpunkte/90*5+1, gerundet auf 0.1.
 
 ## Themen
 
