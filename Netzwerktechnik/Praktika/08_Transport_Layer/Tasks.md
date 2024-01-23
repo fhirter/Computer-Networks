@@ -40,3 +40,5 @@ Messe die Geschwindigkeit der Übertragung und vergleiche diese mit einer TCP-ba
 ### Zuverlässiges Transportprotokoll
 
 Erweitere die obige Aufgabe um Funktionalität, die eine zuverlässige Kommunikation sicherstellt.
+
+https://media.pearsoncmg.com/aw/aw_kurose_network_3/labs/lab5/lab5.html
