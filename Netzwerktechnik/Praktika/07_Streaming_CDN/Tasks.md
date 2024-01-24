@@ -23,9 +23,10 @@ Es werden folgende formellen Anforderungen gestellt:
 Untersuche, wie Youtube und Netflix Videos streamen.
 Falls du kein Netflix Abo hast, untersuche einen Streaming-Anbieter deiner Wahl oder eine alternative Videoplattform.
 
-Die Aufgabe soll frei gelöst werden unter Verwendung der bisher erlernten Techniken und Werkzeuge (Netzwerkanalyse im
-Browser, Wireshark, dig, etc).
+Die Aufgabe soll frei gelöst werden unter Verwendung der bisher erlernten Techniken und Werkzeuge (**Netzwerkanalyse im
+Browser, Wireshark, dig**, etc).
 Die aufgeführten Fragen können als Orientierung dienen.
+Ziel ist, die Fragen durch eigene Untersuchungen zu beantworten und nicht im Internet zu recherchieren.
 
 ### Video Streaming
 
