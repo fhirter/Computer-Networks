@@ -7,7 +7,7 @@ Kommunikation sowie die Konzepte Fluss- und Staukontrolle.
 
 ## Aufgabenstellung
 
-Zum Erreichen der Lernziele sollten die Aufgaben ....
+Zum Erreichen der Lernziele sollten beide Aufgaben vollständig gelöst werden.
 
 Die Antworten sollen in einem kurzen Bericht festgehalten werden.
 Dieser Bericht ist am Schluss per E-Mail an den Dozenten einzureichen.
@@ -19,8 +19,10 @@ Es werden folgende formellen Anforderungen gestellt:
 
 Nutze eine dir geläufige Sprache oder nutze die Gelegenheit, um eine neue Sprache auszuprobieren.
 Python, JavaScript, C, C#, Go, Rust etc. dürften allesamt gut dafür geeignet sein.
+
 Hardwarenahe Sprachen wie C und [Rust](https://www.rust-lang.org/) werden für derartige, zumeist in Betriebssystemen zu
 findende Funktionalität aufgrund der hohen Performance häufig verwendet.
+
 [Go](https://go.dev/) bietet einen guten Mittelweg aus Einfachheit bei der Entwicklung und hoher Performance.
 
 ### UDP Kommunikation
