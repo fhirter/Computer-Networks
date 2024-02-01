@@ -1,11 +1,13 @@
 # Tools
 ## IDE
 - [PyCharm Professional IDE](https://www.jetbrains.com/de-de/pycharm/)
+- [Goland](https://www.jetbrains.com/go/)
 
 ## Networking
 - [Wireshark](https://www.wireshark.org/download.html)
 - [Chrome Browser](https://www.google.com/intl/de/chrome/)
 - [Firefox Browser](https://www.mozilla.org/de/firefox/new/)
+- [Dig Online Interface](https://digwebinterface.com/)
 
 ## Communication
 - [Matrix Communication Protocol](https://matrix.org/)
