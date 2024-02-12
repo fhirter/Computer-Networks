@@ -5,9 +5,12 @@ def start_server(local_ip, local_port):
 
     buffer_size = 1024
 
-    msg_from_server = "Hello UDP Client"
+    f = open("answer.txt", "r")
+    lines = f.readlines()
+    response = "".join(lines)
+    f.close()
 
-    bytes_to_send = str.encode(msg_from_server)
+    bytes_to_send = str.encode(response)
 
     udp_server_socket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 
