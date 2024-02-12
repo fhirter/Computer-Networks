@@ -1,6 +1,6 @@
 import threading
+import time
 import unittest
-from unittest import TestCase
 
 from Client import send_message
 from Server import start_server
@@ -30,5 +30,3 @@ class TestCommunication(unittest.TestCase):
         print("received message", received_message)
 
         self.assertEqual(received_message, expected_message)
-
-        # todo: stop server and join thread to avoid tests running indefinitely
