@@ -14,5 +14,7 @@ def send_message(ip, port, message):
 
     msg_from_server = udp_client_socket.recvfrom(buffer_size)
 
+    udp_client_socket.close()
+
     return msg_from_server
 
