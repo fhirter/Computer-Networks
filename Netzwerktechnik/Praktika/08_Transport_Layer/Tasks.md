@@ -35,12 +35,12 @@ worauf der Server eine Textdatei zurückliefert.
 Um ein korrektes Funktionieren sicherzustellen, sollen Unit-Tests geschrieben werden.
 Ein Vorgehen nach [TDD](https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung) wird empfohlen.
 
-Zeichne die Kommunikation mit Wireshark auf.
-
-Messe die Geschwindigkeit der Übertragung und vergleiche diese mit einer TCP-basierten Übertragung.
+- Zeichne die Kommunikation mit Wireshark auf.
+- Messe die Geschwindigkeit der Übertragung und vergleiche diese mit einer TCP-basierten Übertragung.
+- Untersuche, wie gross die maximale Paketgrösse ist, die zuverlässig Übertragen werden kann.
+  Verschicke mehrere Pakete, wenn diese überschritten wird.
+  Setze die Nachricht beim Empfänger wieder zusammen.
 
 ### Zuverlässiges Transportprotokoll
 
-Erweitere die obige Aufgabe um Funktionalität, die eine zuverlässige Kommunikation sicherstellt.
-
-https://media.pearsoncmg.com/aw/aw_kurose_network_3/labs/lab5/lab5.html
+Erweitere die UDP Kommunikation um eine zuverlässige Übertragung. 
