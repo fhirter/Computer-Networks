@@ -22,9 +22,12 @@ class TestCommunication(unittest.TestCase):
         server_thread.start()
         time.sleep(1)
 
+        print("test: sending message")
         received_bytes = send_message(ip, port, message)
 
         received_message = received_bytes[0].decode('UTF-8')
+
+        print("received message", received_message)
 
         self.assertEqual(received_message, expected_message)
 
