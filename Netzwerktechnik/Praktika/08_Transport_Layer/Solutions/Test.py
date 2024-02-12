@@ -18,6 +18,7 @@ class TestCommunication(unittest.TestCase):
         print("test: starting server")
 
         server_thread = threading.Thread(target=start_server, args=(ip, port))
+        server_thread.daemon = True
         server_thread.start()
 
         received_bytes = send_message(ip, port, message)
