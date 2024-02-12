@@ -20,6 +20,7 @@ class TestCommunication(unittest.TestCase):
         server_thread = threading.Thread(target=start_server, args=(ip, port))
         server_thread.daemon = True
         server_thread.start()
+        time.sleep(1)
 
         received_bytes = send_message(ip, port, message)
 
