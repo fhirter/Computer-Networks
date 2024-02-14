@@ -37,7 +37,6 @@ Ein Vorgehen nach [TDD](https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung
 
 Kapitel 2.7 im Buch erläutert das Vorgehen im Detail.
 
-- Zeichne die Kommunikation mit Wireshark auf.
 - Untersuche, wie gross die maximale Paketgrösse ist, die zuverlässig Übertragen werden kann.
   Unterteile die Nachricht in mehrere Pakete, wenn diese überschritten wird.
   Setze die Nachricht beim Empfänger wieder zusammen.
@@ -45,6 +44,7 @@ Kapitel 2.7 im Buch erläutert das Vorgehen im Detail.
   **Hinweis**: Nutze in Python `socket.SOCK_STREAM` als `type`-Argument von ` socket.socket()` um TCP zur Übertragung zu
   nutzen.
   Messe die Geschwindigkeit der Übertragung und vergleiche diese mit einer TCP-basierten Übertragung.
+- Zeichne die Kommunikation mit UDP und TCP mit Wireshark auf.
 
 ### Zuverlässiges Transportprotokoll
 
