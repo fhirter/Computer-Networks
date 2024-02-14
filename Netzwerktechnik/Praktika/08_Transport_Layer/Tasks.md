@@ -53,11 +53,4 @@ Implementiere aufbauend auf die UDP-Kommunikation aus der ersten Aufgabe ein zuv
 Behandle die ganze Nachricht als Einheit, deren korrekte Übertragung sichergestellt werden soll, auch wenn sie mit
 mehreren Paketen übertragen wird.
 
-Versuche, folgende Varianten eines zuverlässigen Transportprotokolls zu implementieren:
-
-1. **stop-and-wait**
-2. **alternating-bit protocol** 
-3. **Go-Back-N**
-4. **Selective-Repeat**
-
-Beginne mit **stop-and-wait** und erweitere die Funktionalität schrittweise.
+Beginne mit **stop-and-wait** und erweitere die Funktionalität schrittweise, falls nötig.
