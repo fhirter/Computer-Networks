@@ -5,7 +5,7 @@ def start_server(local_ip, local_port):
 
     buffer_size = 1024
 
-    f = open("answer.txt", "r")
+    f = open("answer_short.txt", "r")
     lines = f.readlines()
     response = "".join(lines)
     f.close()
@@ -20,12 +20,8 @@ def start_server(local_ip, local_port):
 
     while True:
         print("server: waiting for messages")
-        bytes_address_pair = udp_server_socket.recvfrom(buffer_size)
-
-        message = bytes_address_pair[0]
+        [message, address] = udp_server_socket.recvfrom(buffer_size)
 
         print("server: message received ", message)
-
-        address = bytes_address_pair[1]
 
         udp_server_socket.sendto(bytes_to_send, address)

@@ -25,7 +25,7 @@ findende Funktionalität aufgrund der hohen Performance häufig verwendet.
 
 [Go](https://go.dev/) bietet einen guten Mittelweg aus Einfachheit bei der Entwicklung und hoher Performance.
 
-### UDP Kommunikation
+### UDP und TCP Kommunikation
 
 Schreibe einen einfachen Client und Server, die Daten per UDP austauschen können.
 
@@ -35,12 +35,30 @@ worauf der Server eine Textdatei zurückliefert.
 Um ein korrektes Funktionieren sicherzustellen, sollen Unit-Tests geschrieben werden.
 Ein Vorgehen nach [TDD](https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung) wird empfohlen.
 
+Kapitel 2.7 im Buch erläutert das Vorgehen im Detail.
+
 - Zeichne die Kommunikation mit Wireshark auf.
-- Messe die Geschwindigkeit der Übertragung und vergleiche diese mit einer TCP-basierten Übertragung.
 - Untersuche, wie gross die maximale Paketgrösse ist, die zuverlässig Übertragen werden kann.
-  Verschicke mehrere Pakete, wenn diese überschritten wird.
+  Unterteile die Nachricht in mehrere Pakete, wenn diese überschritten wird.
   Setze die Nachricht beim Empfänger wieder zusammen.
+- Implementiere dieselbe Funktionalität unter Verwendung von TCP als Übertragungsprotokoll.
+  **Hinweis**: Nutze in Python `socket.SOCK_STREAM` als `type`-Argument von ` socket.socket()` um TCP zur Übertragung zu
+  nutzen.
+  Messe die Geschwindigkeit der Übertragung und vergleiche diese mit einer TCP-basierten Übertragung.
 
 ### Zuverlässiges Transportprotokoll
 
-Erweitere die UDP Kommunikation um eine zuverlässige Übertragung. 
+Implementiere aufbauend auf die UDP-Kommunikation aus der ersten Aufgabe ein zuverlässiges Transportprotokoll.
+
+Behandle die ganze Nachricht als Einheit, deren korrekte Übertragung sichergestellt werden soll, auch wenn sie mit
+mehreren Paketen übertragen wird.
+
+Versuche, folgende Varianten eines zuverlässigen Transportprotokolls zu implementieren:
+1. **stop-and-wait**
+2. **alternating-bit protocol** 
+3. 
+
+- Bestätigung von Nachrichten
+- Fehlererkennung
+- Timeouts
+- Wiederholung der Übertragung
