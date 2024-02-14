@@ -54,3 +54,5 @@ Behandle die ganze Nachricht als Einheit, deren korrekte Übertragung sichergest
 mehreren Paketen übertragen wird.
 
 Beginne mit **stop-and-wait** und erweitere die Funktionalität schrittweise, falls nötig.
+
+Nimm die Tabelle 3.1. im Buch zur Hilfe, für eine Übersicht über die verschiedenen Möglichkeiten.
