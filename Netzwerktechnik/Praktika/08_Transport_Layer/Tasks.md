@@ -54,11 +54,10 @@ Behandle die ganze Nachricht als Einheit, deren korrekte Übertragung sichergest
 mehreren Paketen übertragen wird.
 
 Versuche, folgende Varianten eines zuverlässigen Transportprotokolls zu implementieren:
+
 1. **stop-and-wait**
 2. **alternating-bit protocol** 
-3. 
+3. **Go-Back-N**
+4. **Selective-Repeat**
 
-- Bestätigung von Nachrichten
-- Fehlererkennung
-- Timeouts
-- Wiederholung der Übertragung
+Beginne mit **stop-and-wait** und erweitere die Funktionalität schrittweise.
