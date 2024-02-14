@@ -44,7 +44,7 @@ Kapitel 2.7 im Buch erläutert das Vorgehen im Detail.
   **Hinweis**: Nutze in Python `socket.SOCK_STREAM` als `type`-Argument von ` socket.socket()` um TCP zur Übertragung zu
   nutzen.
   Messe die Geschwindigkeit der Übertragung und vergleiche diese mit einer TCP-basierten Übertragung.
-- Zeichne die Kommunikation mit UDP und TCP mit Wireshark auf.
+- Zeichne die Kommunikation über UDP und TCP mit Wireshark auf und skizziere sie.
 
 ### Zuverlässiges Transportprotokoll
 
