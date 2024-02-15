@@ -1,4 +1,4 @@
-import socket
+import socket_with_errors as socket
 
 
 def send_message(ip, port, message):
