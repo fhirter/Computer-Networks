@@ -10,7 +10,7 @@ class TestRouter(unittest.TestCase):
         message -> r1 / port 0 -> r1 / port 1 -> r2 / port 0
         '''
 
-        destination = 'foo'
+        destination = 0b10111
         message = Message(destination, 'Hello World!')
 
         r1 = Router('R1', 2)
