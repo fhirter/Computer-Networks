@@ -1,13 +1,16 @@
+import Message
+
+
 class Port:
     def __init__(self, port_id):
         self._callback = None
         self.port_id = port_id
         self.connected_port = None
 
-    def send_in(self, message):
+    def send_in(self, message: Message):
         self._callback(message)
 
-    def send_out(self, message):
+    def send_out(self, message: Message):
         self.connected_port.send_in(message)
 
     def receive(self, callback):
