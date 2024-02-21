@@ -24,7 +24,7 @@ Versuche möglichst strukturiert vorzugehen:
 
 ### Data Plane
 
-Nutze den beiliegenden Code ([Router.py](Router.py)) um ein Netzwerk von Routern aufzubauen.
+Nutze den beiliegenden Code ([Router.py](Router.py)) um ein simuliertes Netzwerk von Routern aufzubauen.
 
 Implementiere folgende Struktur oder wähle eine eigene:
 
@@ -41,11 +41,9 @@ flowchart LR
 ```
 
 1. Konfiguriere die Routing Tabellen so, dass Nachrichten von R1 zu R6 geroutet werden. Überprüfe den Weg der
-   Nachrichten
-   mit Logging.
+   Nachrichten mit Logging.
 2. Ändere die Weiterleitung so, dass nur ein Präfix des Ziels in die Routingtabelle eingetragen werden kann. Z.B. für
-   die
-   Adresse `110100`:
+   die Adresse `110100`:
 
 | Prefix | Port |
 |--------|------|
