@@ -14,11 +14,11 @@ class TestRouter(unittest.TestCase):
         message = Message(destination, 'Hello World!')
 
         r1 = Router('R1', 2)
-        r1.update_forwarding_table(destination, 1)
-
         r2 = Router('R2', 1)
 
         r1.attach(1, r2, 0)
+
+        r1.update_forwarding_table(destination, 1)
 
         def callback(msg):
             print(msg.value)
