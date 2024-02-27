@@ -2,9 +2,9 @@
 
 ## Lernziele
 
-- Die Studierenden kennen die Internetprotokolle HTTP, DNS, TCP, UDP, IP und verstehen deren Funktionsweise.
-- Die Studierenden sind vertraut mit IPv4 und IPv6 Adressierung und NAT sowie der Konfiguration mit DHCP und Stateless
-  Address Autoconfiguration bei IPv6.
+- Die Studierenden wissen, wie Router funktionieren und wie sie im Verbund das globale Zustellen von IP-Paketen
+  ermöglichen.
+- Die Studierenden sind vertraut mit IPv4 und IPv6 Adressierung und CIDR Subnetting.
 
 ## Aufgabenstellung
 
@@ -43,7 +43,8 @@ flowchart LR
 1. Konfiguriere die Routing Tabellen so, dass Nachrichten auf dem schnellsten Weg von `R1` zu `R6` geroutet werden. Die
    Zahlen auf den Verbindungen sind ein Mass für die Übertragungsgeschwindigkeit.
    Überprüfe den Weg der Nachrichten mit Logging.
-2. Implementiere einen Parser, der `IPv4` oder `IPv6` Pakete in ein Message-Objekt übersetzt. Überprüfe die Protokollversion
+2. Implementiere einen Parser, der `IPv4` oder `IPv6` Pakete in ein Message-Objekt übersetzt. Überprüfe die
+   Protokollversion
    und ob das Paket noch gültig ist (`TTL`, `Hop Limit`) und extrahiere die Ziel-Adresse.
 3. Ändere die Weiterleitung so, dass IP-Adressen (inkl. Host-Teil) mit den Einträgen in der Routing Tabelle verglichen
    werden.
