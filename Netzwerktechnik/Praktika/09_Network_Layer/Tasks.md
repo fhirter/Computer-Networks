@@ -30,30 +30,28 @@ Implementiere folgende Struktur oder wähle eine eigene:
 
 ```mermaid
 flowchart LR
-    R1 --- R6
-    R1 --- R2
-    R2 --- R3
-    R2 --- R4
-    R2 --- R5
-    R3 --- R6
-    R4 --- R6
-    R5 --- R6
+    R2 ---|1| R5
+    R1 ---|7| R5
+    R1 ---|4| R2
+    R2 ---|8| R3
+    R2 ---|1| R4
+    R3 ---|9| R6
+    R4 ---|2| R6
+    R5 ---|1| R6
 ```
 
-1. Konfiguriere die Routing Tabellen so, dass Nachrichten von R1 zu R6 geroutet werden. Überprüfe den Weg der
-   Nachrichten mit Logging.
-2. Ändere die Weiterleitung so, dass nur ein Präfix des Ziels in die Routingtabelle eingetragen werden kann. Z.B. für
-   die Adresse `110100`:
-
-| Prefix | Port |
-|--------|------|
-| 110    | 0    |
-
-3. Erweitere die Ports mit Buffern in denen Nachrichten an den Port (`send_in`, `send_out`) gespeichert werden. Versende
+1. Konfiguriere die Routing Tabellen so, dass Nachrichten auf dem schnellsten Weg von `R1` zu `R6` geroutet werden. Die
+   Zahlen auf den Verbindungen sind ein Mass für die Übertragungsgeschwindigkeit.
+   Überprüfe den Weg der Nachrichten mit Logging.
+2. Implementiere einen Parser, der `IPv4` oder `IPv6` Pakete in ein Message-Objekt übersetzt. Überprüfe die Protokollversion
+   und ob das Paket noch gültig ist (`TTL`, `Hop Limit`) und extrahiere die Ziel-Adresse.
+3. Ändere die Weiterleitung so, dass IP-Adressen (inkl. Host-Teil) mit den Einträgen in der Routing Tabelle verglichen
+   werden.
+4. Erweitere die Ports mit Buffern in denen Nachrichten an den Port (`send_in`, `send_out`) gespeichert werden. Versende
    die Nachrichten in den Puffern in regelmässigen Abständen. Untersuche nun, wie die Nachrichten durch das Netzwerk
    geleitet werden.
 
 ### Control Plane
 
-1. Versehe die Verbindungen zwischen den Routern mit Gewichten. Entwickle ein Protokoll, das die optimale Route zwischen
-   zwei Routern berechnet.
+1. Versehe die Verbindungen zwischen den Routern mit Gewichten. Entwickle oder Implementiere ein Protokoll, das die
+   optimale Route zwischen zwei Routern berechnet.
