@@ -2,7 +2,7 @@ import unittest
 
 from Client import Client
 from Router import Router
-from Message import Message
+from IPv6Message import IPv6Message
 
 
 class TestRouter(unittest.TestCase):
@@ -11,12 +11,13 @@ class TestRouter(unittest.TestCase):
         message -> r1 / port 0 -> r1 / port 1 -> r2 / port 0 -> client / port 0
         '''
 
-        destination = 0b10111
-        message = Message(destination, 'Hello World!')
+        destination_address = "2345:0425:2CA1:0000:0000:0567:5673:23b5"
+
+        message = IPv6Message(destination_address, 'Hello World!')
 
         def callback(msg):
-            print(f"Message received: {message.value}")
-            self.assertEqual(message.value, msg.value)
+            print(f"Message received: {message.payload}")
+            self.assertEqual(message.payload, msg.payload)
 
         r1 = Router('R1', 2)
         r2 = Router('R2', 2)
@@ -25,8 +26,8 @@ class TestRouter(unittest.TestCase):
         r1.attach(1, r2, 0)
         r2.attach(1, client, 0)
 
-        r1.update_forwarding_table(destination, 1)
-        r2.update_forwarding_table(destination, 1)
+        r1.update_forwarding_table(destination_address, 1)
+        r2.update_forwarding_table(destination_address, 1)
 
         r1.ports[0].send_in(message)
 
