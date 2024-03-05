@@ -43,10 +43,8 @@ flowchart LR
 1. Konfiguriere die Routing Tabellen so, dass Nachrichten auf dem schnellsten Weg von `R1` zu `R6` geroutet werden. Die
    Zahlen auf den Verbindungen sind ein Mass für die Übertragungsgeschwindigkeit. Überprüfe den Weg der Nachrichten,
    indem du in jedem Router bei der Weiterleitung loggst.
-2. Implementiere einen Parser, der `IPv4` oder `IPv6` Pakete in ein Message-Objekt übersetzt. Überprüfe die
-   Protokollversion und ob das Paket noch gültig ist (`TTL`, `Hop Limit`) und extrahiere die Ziel-Adresse.
-3. Ändere die Weiterleitung so, dass IP-Adressen (inkl. Host-Teil) mit den Einträgen in der Routing Tabelle verglichen
-   werden.
+2. Überprüfe im Router die Protokollversion des Packets und ob es noch gültig ist (`TTL`, `Hop Limit`).
+3. Ändere die Weiterleitung so, dass Subnetze in die forwarding table eingetragen werden können.
 4. Erweitere die Ports mit Buffern in denen Nachrichten an den Port (`send_in`, `send_out`) gespeichert werden. Versende
    die Nachrichten in den Puffern in regelmässigen Abständen. Untersuche nun, wie die Nachrichten durch das Netzwerk
    geleitet werden.
