@@ -1,5 +1,4 @@
 from Port import Port
-import Message
 
 
 class Client:
