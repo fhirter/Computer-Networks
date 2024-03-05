@@ -1,4 +1,5 @@
 from Port import Port
+from IPv6Packet import IPv6Packet
 
 class Router:
     def __init__(self, router_id, num_ports):
@@ -14,7 +15,7 @@ class Router:
     def update_forwarding_table(self, destination, port_id):
         self.forwarding_table[destination] = port_id
 
-    def __forward(self, message: IPv6Message):
+    def __forward(self, message: IPv6Packet):
         destination = message.destination_address
         if destination in self.forwarding_table:
             port_id = self.forwarding_table[destination]
