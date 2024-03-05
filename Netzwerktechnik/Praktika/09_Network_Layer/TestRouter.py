@@ -2,7 +2,7 @@ import unittest
 
 from Client import Client
 from Router import Router
-from IPv6Message import IPv6Message
+from IPv6Packet import IPv6Packet
 
 
 class TestRouter(unittest.TestCase):
@@ -13,7 +13,7 @@ class TestRouter(unittest.TestCase):
 
         destination_address = "2345:0425:2CA1:0000:0000:0567:5673:23b5"
 
-        message = IPv6Message(destination_address, 'Hello World!')
+        message = IPv6Packet(destination_address, 'Hello World!')
 
         def callback(msg):
             print(f"Message received: {message.payload}")

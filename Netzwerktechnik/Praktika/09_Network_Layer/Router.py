@@ -1,6 +1,4 @@
 from Port import Port
-import IPv6Message
-
 
 class Router:
     def __init__(self, router_id, num_ports):

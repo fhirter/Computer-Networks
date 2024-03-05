@@ -1,4 +1,4 @@
-class IPv6Message:
+class IPv6Packet:
     def __init__(self, destination_address, payload):
         self.version = 0x6
         self.traffic_class = 0x0  # no specific traffic
