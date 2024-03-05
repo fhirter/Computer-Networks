@@ -10,8 +10,8 @@
 
 Zum Erreichen der Lernziele sollte die erste Aufgabe vollständig gelöst werden.
 
-Die Antworten sollen in einem kurzen Bericht festgehalten werden.
-Dieser dient den anderen Studierenden als Handout (Format: PDF).
+Die Antworten sollen in einem kurzen Bericht festgehalten werden. Dieser dient den anderen Studierenden als Handout (
+Format: PDF).
 
 Versuche möglichst strukturiert vorzugehen:
 
@@ -26,7 +26,7 @@ Versuche möglichst strukturiert vorzugehen:
 
 Nutze den beiliegenden Code ([Router.py](Router.py)) um ein simuliertes Netzwerk von Routern aufzubauen.
 
-Implementiere folgende Struktur oder wähle eine eigene:
+Implementiere folgende Struktur oder wähle eine Eigene:
 
 ```mermaid
 flowchart LR
@@ -41,11 +41,10 @@ flowchart LR
 ```
 
 1. Konfiguriere die Routing Tabellen so, dass Nachrichten auf dem schnellsten Weg von `R1` zu `R6` geroutet werden. Die
-   Zahlen auf den Verbindungen sind ein Mass für die Übertragungsgeschwindigkeit.
-   Überprüfe den Weg der Nachrichten mit Logging.
+   Zahlen auf den Verbindungen sind ein Mass für die Übertragungsgeschwindigkeit. Überprüfe den Weg der Nachrichten,
+   indem du in jedem Router bei der Weiterleitung loggst.
 2. Implementiere einen Parser, der `IPv4` oder `IPv6` Pakete in ein Message-Objekt übersetzt. Überprüfe die
-   Protokollversion
-   und ob das Paket noch gültig ist (`TTL`, `Hop Limit`) und extrahiere die Ziel-Adresse.
+   Protokollversion und ob das Paket noch gültig ist (`TTL`, `Hop Limit`) und extrahiere die Ziel-Adresse.
 3. Ändere die Weiterleitung so, dass IP-Adressen (inkl. Host-Teil) mit den Einträgen in der Routing Tabelle verglichen
    werden.
 4. Erweitere die Ports mit Buffern in denen Nachrichten an den Port (`send_in`, `send_out`) gespeichert werden. Versende
