@@ -8,7 +8,7 @@
 
 ## Aufgabenstellung
 
-Zum Erreichen der Lernziele sollte die erste Aufgabe vollständig gelöst werden.
+**Zum Erreichen der Lernziele sollte die Aufgabe Data "Plane Punkte" 1-4 vollständig gelöst werden.**
 
 Die Antworten sollen in einem kurzen Bericht festgehalten werden. Dieser dient den anderen Studierenden als Handout (
 Format: PDF).
