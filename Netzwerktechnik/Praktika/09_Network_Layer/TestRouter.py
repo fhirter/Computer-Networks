@@ -5,6 +5,7 @@ from Client import Client
 from Router import Router
 from IPv6Packet import IPv6Packet
 
+from helpers import parse_address
 
 class TestRouter(unittest.TestCase):
     def test_message_forwarding(self):
@@ -12,7 +13,7 @@ class TestRouter(unittest.TestCase):
         message -> r1 / port 0 -> r1 / port 1 -> r2 / port 0 -> client / port 0
         '''
 
-        destination_address = 0x234504252CA1000000000567567323b5
+        destination_address = parse_address("2345:0425:2CA1:0000:0000:0567:5673:23b5")
 
         message = IPv6Packet(destination_address, 'Hello World!')
 

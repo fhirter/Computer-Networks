@@ -1,6 +1,3 @@
-from helpers import parse_address
-
-
 class IPv6Packet:
     def __init__(self, destination_address, payload):
         self.version = 0x6
@@ -12,6 +9,6 @@ class IPv6Packet:
 
         self.source_address = 0x0
 
-        self.destination_address = parse_address(destination_address)
+        self.destination_address = destination_address
 
         self.payload = payload
