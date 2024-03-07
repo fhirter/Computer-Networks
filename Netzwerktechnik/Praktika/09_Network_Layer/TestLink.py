@@ -10,7 +10,7 @@ class TestLink(unittest.TestCase):
         message = IPv6Packet(destination, 'Hello World!')
 
         def callback(msg):
-            self.assertEqual(message.value, msg.value)
+            self.assertEqual(message.payload, msg.payload)
 
         link = Link(callback)
         link.send(message)
