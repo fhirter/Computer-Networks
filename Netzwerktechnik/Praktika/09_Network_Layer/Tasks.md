@@ -24,7 +24,9 @@ Versuche möglichst strukturiert vorzugehen:
 
 ### Data Plane
 
-Nutze den beiliegenden Code ([Router.py](Router.py)) um ein simuliertes Netzwerk von Routern aufzubauen.
+Nutze den beiliegenden Code, um ein simuliertes Netzwerk von Routern aufzubauen.
+
+Orientiere dich dafür am Test ([TestRouter.py](TestRouter.py)).
 
 Implementiere folgende Struktur oder wähle eine Eigene:
 
