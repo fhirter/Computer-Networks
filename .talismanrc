@@ -1,4 +1,6 @@
 fileignoreconfig:
 - filename: Netzwerktechnik/Praktika/05_Email/Tasks.md
   checksum: 6f5b8a0f2a1fc82a6f3539f13002312ed53a86bac20b375b75405ecb9832398a
+- filename: Netzwerktechnik/Praktika/09_Network_Layer/TestRouter.py
+  checksum: f0404b6738f4fe974dc76a1b31ae9a480387fe9ca570b2c46f3828fd9ee5c941
 version: ""
