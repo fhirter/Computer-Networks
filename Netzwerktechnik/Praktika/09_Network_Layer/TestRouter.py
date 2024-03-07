@@ -1,4 +1,5 @@
 import unittest
+from unittest.mock import Mock
 
 from Client import Client
 from Router import Router
@@ -15,13 +16,11 @@ class TestRouter(unittest.TestCase):
 
         message = IPv6Packet(destination_address, 'Hello World!')
 
-        def callback(msg):
-            print(f"Message received: {message.payload}")
-            self.assertEqual(message.payload, msg.payload)
+        mock_callback = Mock()
 
         r1 = Router('R1', 2)
         r2 = Router('R2', 2)
-        client = Client('C1', callback)
+        client = Client('C1', mock_callback)
 
         r1.attach(1, r2, 0)
         r2.attach(1, client, 0)
@@ -30,6 +29,8 @@ class TestRouter(unittest.TestCase):
         r2.update_forwarding_table(destination_address, 1)
 
         r1.ports[0].send_in(message)
+
+        mock_callback.assert_called_with(message)
 
 
 if __name__ == "__main__":
