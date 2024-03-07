@@ -45,9 +45,11 @@ flowchart LR
 1. Konfiguriere die Routing Tabellen so, dass Nachrichten auf dem schnellsten Weg von `R1` zu `R6` geroutet werden. Die
    Zahlen auf den Verbindungen sind ein Mass für die Übertragungsgeschwindigkeit. Überprüfe den Weg der Nachrichten,
    indem du in jedem Router bei der Weiterleitung loggst.
-2. Überprüfe im Router die Protokollversion des Packets und ob es noch gültig ist (`TTL`, `Hop Limit`).
-3. Ändere die Weiterleitung so, dass Subnetze in die forwarding table eingetragen werden können.
-4. Erweitere die Ports mit Buffern in denen Nachrichten an den Port (`send_in`, `send_out`) gespeichert werden. Versende
+2. Überprüfe im Router die Protokollversion des Packets.
+3. Dekrementiere im Router das `Hop Limit` und leite es nur weiter, wenn es noch gültig, d.h. grösser als 0 ist. 
+   Teste dies, indem du die Routing Tabellen so änderst, dass die Pakete im Kreis geroutet werden.
+4. Ändere die Weiterleitung so, dass Subnetze in die forwarding table eingetragen werden können.
+5. Erweitere die Ports mit Buffern in denen Nachrichten an den Port (`send_in`, `send_out`) gespeichert werden. Versende
    die Nachrichten in den Puffern in regelmässigen Abständen. Untersuche nun, wie die Nachrichten durch das Netzwerk
    geleitet werden.
 
