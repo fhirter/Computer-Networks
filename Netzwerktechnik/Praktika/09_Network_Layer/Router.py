@@ -21,6 +21,7 @@ class Router:
             port_id = self.forwarding_table[destination]
             port = self.ports[port_id]
             port.send_out(message)
+            print(f"Forwarded Packet to {destination} at Router {self.router_id}")
         else:
             print(f"No forwarding entry for {destination}")
 
