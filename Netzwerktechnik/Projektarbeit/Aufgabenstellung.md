@@ -53,7 +53,7 @@ Präsentation:
 - Individuelle Fragen (Einzelbewertung)
 - Individuelle Antworten (Einzelbewertung)
 
-Umfang: ca 2500 Wörter.
+Umfang: ca 5000 Wörter.
 
 Jeder Punkt der Liste oben gibt 10 Punkte, damit ist das total 90 Punkte.
 Die Note berechnet sich folgendermassen: Gesamtpunkte/90*5+1, gerundet auf 0.1.
