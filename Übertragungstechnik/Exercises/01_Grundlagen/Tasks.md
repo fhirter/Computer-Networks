@@ -2,8 +2,8 @@
 
 ## Überblick
 
-Lies folgenden Artikel aufmerksam durch und notiere dir Punkte, die du nicht verstehst:
-[Wenn die Nachbarn früher jubeln: Die Fussball-TV-Hölle](https://blog.init7.net/de/wenn-die-nachbarn-frueher-jubeln-die-fussball-tv-hoelle/)
+Lies folgenden Artikel aufmerksam durch. Halte den Inhalt stichwortartig fest und notiere dir Punkte, die du nicht 
+verstehst: [Wenn die Nachbarn früher jubeln: Die Fussball-TV-Hölle](https://blog.init7.net/de/wenn-die-nachbarn-frueher-jubeln-die-fussball-tv-hoelle/)
 
 Versuche anschliessend in der Gruppe die nicht bekannten Punkte zu klären und bearbeite folgende Fragen:
 
