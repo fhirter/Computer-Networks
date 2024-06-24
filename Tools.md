@@ -9,6 +9,10 @@
 - Browser: [Firefox Browser](https://www.mozilla.org/de/firefox/new/)
 - DNS Tool: [Dig Online Interface](https://digwebinterface.com/)
 
+## CLI Tools
+- `dig`
+- `traceroute` / `traceroute6` (unix), `tracert` (windows)
+
 ## Communication
 - [Matrix Communication Protocol](https://matrix.org/)
 
