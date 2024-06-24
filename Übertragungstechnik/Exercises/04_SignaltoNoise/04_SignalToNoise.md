@@ -30,7 +30,7 @@ Untersuche den Einfluss der verschiedenen Grössen auf das Augendiagramm:
 Notiere deine Erkenntnisse.
 
 ## Übung 4
-Die beiden wichtigsten Kennwerte der Digial-Analog-Wandlung sind Bit-Rate und Abtastrate (engl. sampling rate).
+Die beiden wichtigsten Kennwerte der Digital-Analog-Wandlung sind Bit-Rate und Abtastrate (engl. sampling rate).
 Die Abtastrate bestimmt nach dem Nyquist-Shannon-Abtasttheorem die maximal im Signal vorkommende Frequenz.
 Die Bit-Rate hingegen bestimmt den möglichen Störabstand, da die Quantisierung Rauschen verursacht.
 Der resultierende Störabstand ist proportional zur verwendeten Bit-Tiefe n:
