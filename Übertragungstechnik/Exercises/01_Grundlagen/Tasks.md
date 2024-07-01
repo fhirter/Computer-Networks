@@ -65,8 +65,7 @@ Also z.B.:
 
 Erstelle drei Diagramme für die drei wichtigen Übertragungsmedien Kupfer, Glasfaser und Funk. Die X-Achse bezeichnet die
 Bandbreite, die Y-Achse den Störabstand des Kanals:
-![BandbreiteVsStörabstand.png](..%2F..%2F..%2F..%2F..%2FDownloads%2FBandbreiteVsSt%C3%B6rabstand.png)
-
+![BandbreiteVsStörabstand.png](BandbreiteVsSt%C3%B6rabstand.png)
 Zeichne in diese drei Diagramme nun jeweils eine Fläche ein, die den verfügbaren Störabstand und Bandbreite des
 Übertragungskanals darstellt. Die exakten numerischen Werte sind dabei zweitrangig, wichtig ist das Verhältnis der drei
 Kanäle.
