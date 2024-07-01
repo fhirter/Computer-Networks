@@ -8,7 +8,9 @@ import numpy as np
 
 def plot_time_and_frequency_domain(input_signal, sampling_frequency):
     figure1, (ax1, ax2) = plt.subplots(2, 1)
-    ax1.plot(input_signal, "r")
+    time_axis = np.linspace(0, 2, num=len(input_signal))
+
+    ax1.plot(time_axis, input_signal, "r")
     ax1.set(
         xlabel='time [s]',
         ylabel='Amplitude',
@@ -21,6 +23,7 @@ def plot_time_and_frequency_domain(input_signal, sampling_frequency):
     base_frequency = np.argmax(np.asarray(yf[0:math.floor(sampling_frequency / 2)])) / 2
 
     ax1.grid()
+    ax1.set_xlim(0, 0.02)
 
     ax2.grid()
     levels = mag2db(yf)
@@ -32,11 +35,12 @@ def plot_time_and_frequency_domain(input_signal, sampling_frequency):
         ylabel='Power dBfs'
     )
 
-    ax1.set_xlim(0, sampling_frequency/base_frequency)
+    frequency_range = 20
+    ax2.set_xlim(0, base_frequency * frequency_range)
 
-    ax2.set_xlim(0, base_frequency * 100)
+    ax2.set_ylim(min(levels), max(levels) + 10)
+    ax2.set_xticks(np.arange(base_frequency, base_frequency * frequency_range, step=2 * base_frequency))
 
-    ax2.set_ylim(min(levels), max(levels)+10)
-    ax2.set_xticks(np.arange(base_frequency, base_frequency * 100, step=10 * base_frequency))
+    figure1.tight_layout()
 
     return plt
