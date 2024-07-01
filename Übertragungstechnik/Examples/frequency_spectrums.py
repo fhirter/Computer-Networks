@@ -15,7 +15,7 @@ signal_type = "square"  # one of: square, sine, sawtooth, noise
 signal_frequency =100
 
 # filter parameters
-filter_order = 2
+filter_order = 3
 
 sampling_frequency = 50000
 
