@@ -65,9 +65,9 @@ Also z.B.:
 ## Nachrichtenquader
 
 Erstelle drei Diagramme für die drei wichtigen Übertragungsmedien Kupfer, Glasfaser und Funk. Die X-Achse bezeichnet die
-Bandbreite, die Y-Achse den Störabstand des Kanals:
-![BandbreiteVsStörabstand.png](BandbreiteVsSt%C3%B6rabstand.png)
-Zeichne in diese drei Diagramme nun jeweils eine Fläche ein, die den verfügbaren Störabstand und Bandbreite des
+den Frequenzbereich, die Y-Achse den Störabstand des Kanals:
+![SNR_vs_Frequency.png](SNR_vs_Frequency.png))
+Zeichne in diese drei Diagramme nun jeweils eine Fläche ein, die den verfügbaren Störabstand und Frequenzbereich des
 Übertragungskanals darstellt. Die exakten numerischen Werte sind dabei zweitrangig, wichtig ist das Verhältnis der drei
 Kanäle.
 
