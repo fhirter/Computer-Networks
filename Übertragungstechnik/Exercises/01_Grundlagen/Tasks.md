@@ -22,12 +22,12 @@ Versuche anschliessend in der Gruppe die nicht bekannten Punkte zu klären und b
 
 ## Zeit- und Frequenzbereich
 
-Folgende Abbildung zeigt ein Signal im Zeitbereich.
+Folgende Abbildung zeigt ein Signal im Zeitbereich.  
 ![img_2.png](Zeitbereich.png)
 
 - Skizziere die Darstellung des Signals im Frequenzbereich.
 
-Folgende Abbildung zeigt ein Signal im Frequenzbereich.
+Folgende Abbildung zeigt ein Signal im Frequenzbereich.  
 ![img_3.png](Frequenzbereich.png)
 
 - Skizziere die Darstellung des Signals im Zeitbereich.
@@ -45,7 +45,8 @@ Viele Protokolle teilen den verfügbaren Frequenzbereich in Kanäle auf. Gib sow
 Kanalbandbreite an.
 
 Die Zuweisung der Funkfrequenzen ist pro Land unterschiedlich.
-[Gib die Situation in der Schweiz an.]([zugewiesenen Frequenzbereich](https://www.bakom.admin.ch/bakom/de/home/frequenzen-antennen/nationaler-frequenzzuweisungsplan.html))
+Gib die Situation in der Schweiz an ([zugewiesenen Frequenzbereich](https://www.bakom.admin.
+ch/bakom/de/home/frequenzen-antennen/nationaler-frequenzzuweisungsplan.html)).
 
 - DVB-T
 - WLAN IEEE 802.11a
