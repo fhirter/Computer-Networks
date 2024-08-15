@@ -8,14 +8,7 @@ Hinweis: Bei Bildern zeigt sich das Rauschen in dunklen Bildteilen als farbige P
 
 Notiere deine Erkenntnisse.
 
-## Übung 3
-Arbeite mit dem Script `frequency_spectrums.py` in Github Repository.
 
-Untersuche den Einfluss der verschiedenen Grössen auf das Augendiagramm:
-- Filterfrequenzen (Hoch- und Tiefpass)
-- Verhältnis von Signal zu Rausch-Pegel
-
-Notiere deine Erkenntnisse.
 
 ## Übung 4
 Die beiden wichtigsten Kennwerte der Digital-Analog-Wandlung sind Bit-Rate und Abtastrate (engl. sampling rate).
