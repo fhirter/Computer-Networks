@@ -1,17 +1,5 @@
 # Übung Störabstand
 
-## Übung 1
-Mach dich mit Oszilloskop und Frequenzgenerator vertraut.
-Beobachte das Signal am Oszilloskop bei verschiedenen Einstellungen am Frequenzgenerator.
-Bestimme oder Überprüfe mit dem Oszilloskop Frequenz, Periode, Amplitude, Effektivwert, Gleichanteil des Signals.
-
-Generiere mit dem Frequenzgenerator ein Signal mit einer Amplitude von 0dBu. 
-Überprüfe das Signal mit dem Oszilloskop.
-Überprüfe, ob das Mischpult den Signalpegel korrekt anzeigt.
-Beobachte den Einfluss des Mischpults auf das Signal bei verschiedenen Einstellungen am Mischpult.
-Versuche den Störabstand des Mischpults (am Ausgang) zu bestimmen.
-
-Notiere deine Erkenntnisse.
 
 ## Übung 2
 Untersuche das Rauschen einer Fotokamera.

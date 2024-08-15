@@ -22,18 +22,9 @@ Versuche anschliessend in der Gruppe die nicht bekannten Punkte zu klären und b
 
 ## Zeit- und Frequenzbereich
 
-Folgende Abbildung zeigt ein Signal im Zeitbereich.  
-![img_2.png](Zeitbereich.png)
-
-- Skizziere die Darstellung des Signals im Frequenzbereich.
-
-Folgende Abbildung zeigt ein Signal im Frequenzbereich.  
-![img_3.png](Frequenzbereich.png)
-
-- Skizziere die Darstellung des Signals im Zeitbereich.
-- Wie gross ist der Störabstand (SNR)?
-- Wie gross ist die Bandbreite des Signals?
-- Wieso wird die Leistung in dB angegeben?
+Mach dich mit Oszilloskop und Frequenzgenerator vertraut.
+- Bestimme oder Überprüfe mit dem Oszilloskop Frequenz, Periode, Amplitude, Effektivwert, Gleichanteil des Signals. 
+- Bestimme mit einer Frequenzanalyse Störabstand und Bandbreite des Signals.
 
 ## Bandbreite
 
