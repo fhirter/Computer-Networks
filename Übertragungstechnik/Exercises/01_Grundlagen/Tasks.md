@@ -29,7 +29,7 @@ Mach dich mit Oszilloskop und Frequenzgenerator vertraut.
 ## Augendiagramm
 Arbeite mit dem Script `frequency_spectrums.py` in Github Repository.
 
-Untersuche den Einfluss der verschiedenen Grössen auf das Augendiagramm:
+Untersuche den Einfluss der verschiedenen Grössen auf die Darstellung:
 - Filterfrequenzen (Hoch- und Tiefpass)
 - Verhältnis von Signal zu Rausch-Pegel
 
