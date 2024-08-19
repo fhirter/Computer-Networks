@@ -1,5 +1,10 @@
 # Übung Störabstand
 
+## Komprimierung
+
+Vergleiche die Audiobeispiele, die unterschiedlich stark komprimiert sind.
+Notiere deine Erkenntnisse.
+
 ## AD-Wandlung
 
 Die beiden wichtigsten Kennwerte der Digital-Analog-Wandlung sind Bitrate und Abtastrate (engl. sampling rate).
@@ -10,8 +15,6 @@ Der resultierende Störabstand ist proportional zur verwendeten Bit-Tiefe n:
 `Q_SNR = n*6.02dB+10.78dB`
 
 - Beschreibe, wie durch die Quantisierung Rauschen verursacht wird.
-- Überprüfe anhand der in verschiedenen Bitraten vorliegenden Audiodateien, wie sich das Signal mit verschiedenen 
-Abtast- und Bitraten verändert. Notiere deine Erkenntnisse.
 
 ## Fotokamera 
 
