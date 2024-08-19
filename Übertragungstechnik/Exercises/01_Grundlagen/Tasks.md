@@ -26,7 +26,7 @@ Mach dich mit Oszilloskop und Frequenzgenerator vertraut.
 - Bestimme oder Überprüfe mit dem Oszilloskop Frequenz, Periode, Amplitude, Effektivwert, Gleichanteil des Signals. 
 - Bestimme mit einer Frequenzanalyse Störabstand und Bandbreite des Signals.
 
-## Augendiagramm
+## Frequenzspektrum
 Arbeite mit dem Script `frequency_spectrums.py` in Github Repository.
 
 Untersuche den Einfluss der verschiedenen Grössen auf die Darstellung:
