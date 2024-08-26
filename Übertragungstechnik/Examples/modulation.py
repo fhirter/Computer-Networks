@@ -29,12 +29,21 @@ normalized_filter_frequency = [x / sampling_frequency for x in bandpass_frequenc
 b, a = iirfilter(filter_order, normalized_filter_frequency, btype=filter_type)
 signal = lfilter(b, a, signal)
 
-plt = plot_time_and_frequency_domain(signal, sampling_frequency)
 
-figure = plt.figure(1)
+carrier_plot = plot_time_and_frequency_domain(carrier, sampling_frequency)
+carrier_plot.figure(1).get_axes()[0].set(title="Carrier Signal")
+carrier_plot.show()
+
+data_plot = plot_time_and_frequency_domain(data_signal, sampling_frequency)
+data_plot.figure(1).get_axes()[0].set(title="Data Signal")
+data_plot.show()
+
+modulated_plot = plot_time_and_frequency_domain(signal, sampling_frequency)
+
+figure = modulated_plot.figure(1)
 axes = figure.get_axes()
-
+axes[0].set(title="Amplitude Modulated Signal")
 axes[1].set_xticks(np.arange(0, 1000, step=carrier_frequency/(frequency_domain_range*4)))
 axes[1].set_xlim(carrier_frequency-carrier_frequency/frequency_domain_range, carrier_frequency+carrier_frequency/frequency_domain_range)
 
-plt.show()
+modulated_plot.show()
