@@ -34,8 +34,6 @@ plt = plot_time_and_frequency_domain(signal, sampling_frequency)
 figure = plt.figure(1)
 axes = figure.get_axes()
 
-axes[0].set_xlim(0, 10000)
-
 axes[1].set_xticks(np.arange(0, 1000, step=carrier_frequency/(frequency_domain_range*4)))
 axes[1].set_xlim(carrier_frequency-carrier_frequency/frequency_domain_range, carrier_frequency+carrier_frequency/frequency_domain_range)
 
