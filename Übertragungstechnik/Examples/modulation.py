@@ -38,6 +38,5 @@ axes[0].set_xlim(0, 10000)
 
 axes[1].set_xticks(np.arange(0, 1000, step=carrier_frequency/(frequency_domain_range*4)))
 axes[1].set_xlim(carrier_frequency-carrier_frequency/frequency_domain_range, carrier_frequency+carrier_frequency/frequency_domain_range)
-axes[1].set_ylim(0, 100)
 
 plt.show()
