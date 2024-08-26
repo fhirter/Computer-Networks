@@ -1,6 +1,14 @@
 # Übung Bandbreite - Lösung
 
-## Übung 1
+## Zeit- und Frequenzbereich
+
+### Fourier
+
+$$
+y(t) = \frac{\hat{y}}{2}+\frac{2\hat{y}}{\pi}(sin(\omega t)+\frac{1}{3}sin(3\omega t)+\frac{1}{5}sin(5\omega t))
+$$
+
+### Bandbreite
 
 - DAB
   - 174-230MHz, 1452-1492MHz / 1.536MHz pro Kanal
