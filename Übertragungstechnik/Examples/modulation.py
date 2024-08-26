@@ -6,7 +6,7 @@ from plot_helpers import *
 
 sampling_frequency = int(50000)
 carrier_frequency = int(500)
-signal_frequency = int(10)
+signal_frequency = int(50)
 
 ac = 0.3 # modulation index
 
