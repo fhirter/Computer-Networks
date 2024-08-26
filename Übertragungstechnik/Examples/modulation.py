@@ -8,10 +8,10 @@ sampling_frequency = int(50000)
 carrier_frequency = int(500)
 signal_frequency = int(50)
 
-ac = 0.3 # modulation index
+modulation_index = 0.3 # modulation index
 
 # filter parameters
-critical_frequencies = [400, 600]
+bandpass_frequencies = [10, 10000]
 filter_order = 2
 
 frequency_domain_range = 5    # adjust shown frequency range
@@ -21,11 +21,11 @@ time_array = 2 * np.pi * t
 
 carrier = np.sin(time_array * carrier_frequency)
 data_signal = square(time_array * signal_frequency)
-signal = (1 + data_signal/ac) * carrier
+signal = (1 + data_signal / modulation_index) * carrier
 
 # filter signal
 filter_type = "bandpass"
-normalized_filter_frequency = [x / sampling_frequency for x in critical_frequencies]
+normalized_filter_frequency = [x / sampling_frequency for x in bandpass_frequencies]
 b, a = iirfilter(filter_order, normalized_filter_frequency, btype=filter_type)
 signal = lfilter(b, a, signal)
 
