@@ -8,7 +8,7 @@ sampling_frequency = int(50000)
 carrier_frequency = int(500)
 signal_frequency = int(50)
 
-modulation_index = 0.3 # modulation index
+modulation_index = 0.3
 
 # filter parameters
 bandpass_frequencies = [10, 10000]
