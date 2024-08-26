@@ -1,4 +1,16 @@
-# Übung Leitungscodes
+# Übung Leitungscodierung
+
+## Modulation
+
+Arbeite mit dem Script [`modulation.py`](../../Examples/modulation.py).
+
+- Analysiere die drei Plots in den Grundeinstellungen.
+- Analysiere den Einfluss der folgenden Grössen: `carrier_frequency`, `signal_frequency`, `modulation_index`
+- Filtere das modulierte Signal, indem du `bandpass_frequencies` näher an die Trägerfrequenz setzt. Welche 
+  Bandbreite benötigt das Signal um korrekt empfangen werden zu können?
+
+
+## Leitungscodes
 Codiere folgenden String mit dem 4b5b Leitungscode:
 `Hello World`
 
