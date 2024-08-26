@@ -36,7 +36,7 @@ Notiere, die Frequenzen und Amplituden der einzelnen Sinusschwingungen.
 
 ### Frequenzspektrum
 
-Arbeite mit dem Script `frequency_spectrums.py` in Github Repository.
+Arbeite mit dem Script [`frequency_spectrums.py`](../../Examples/frequency_spectrums.py).
 
 Untersuche den Einfluss der verschiedenen Grössen auf die Darstellung:
 - Filterfrequenzen (Hoch- und Tiefpass)
