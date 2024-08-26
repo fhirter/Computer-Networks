@@ -23,7 +23,7 @@ def plot_time_and_frequency_domain(input_signal, sampling_frequency):
     base_frequency = np.argmax(np.asarray(yf[0:math.floor(sampling_frequency / 2)])) / 2
 
     ax1.grid()
-    ax1.set_xlim(0, 0.02)
+    ax1.set_xlim(0, 10/base_frequency)
 
     ax2.grid()
     levels = mag2db(yf)
