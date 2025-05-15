@@ -22,28 +22,6 @@ Versuche anschliessend in der Gruppe die nicht bekannten Punkte zu klären und b
 
 ## Zeit- und Frequenzbereich
 
-### Oszilloskop
-
-Mach dich mit Oszilloskop und Frequenzgenerator vertraut.
-- Bestimme oder Überprüfe mit dem Oszilloskop Frequenz, Periode, Amplitude, Effektivwert, Gleichanteil des Signals. 
-- Bestimme mit einer Frequenzanalyse Störabstand und Bandbreite des Signals.
-
-### Fourier
-
-Versuche mit dieser [Fourier-Simulation](https://phet.colorado.
-edu/sims/html/fourier-making-waves/latest/fourier-making-waves_en.html) ein Rechtecksignal zu approximieren.
-Notiere, die Frequenzen und Amplituden der einzelnen Sinusschwingungen.
-
-### Frequenzspektrum
-
-Arbeite mit dem Script [`frequency_spectrums.py`](../../Examples/frequency_spectrums.py).
-
-Untersuche den Einfluss der verschiedenen Grössen auf die Darstellung:
-- Filterfrequenzen (Hoch- und Tiefpass)
-- Verhältnis von Signal zu Rausch-Pegel
-
-Notiere deine Erkenntnisse.
-
 ### Bandbreite
 
 Erstelle eine Tabelle, in der du verschiedene Protokolle nach der verfügbaren Bandbreite ordnest.
@@ -70,6 +48,32 @@ Also z.B.:
 | Protokoll        | Frequenzbereich(e)       | Kanalbandbreite(n) | Übertragungskanal |
 |------------------|--------------------------|--------------------|-------------------|
 | DAB  (Pro Kanal) | 174-230MHz, 1452-1492MHz | 7 MHz              | Funk              |
+
+### Fourier
+
+Versuche mit dieser [Fourier-Simulation](https://phet.colorado.
+edu/sims/html/fourier-making-waves/latest/fourier-making-waves_en.html) ein Rechtecksignal zu approximieren.
+Notiere, die Frequenzen und Amplituden der einzelnen Sinusschwingungen.
+
+### Frequenzspektrum
+
+Arbeite mit dem Script [`frequency_spectrums.py`](../../Examples/frequency_spectrums.py).
+
+Untersuche den Einfluss der verschiedenen Grössen auf die Darstellung:
+- Filterfrequenzen (Hoch- und Tiefpass)
+- Verhältnis von Signal zu Rausch-Pegel
+
+Notiere deine Erkenntnisse.
+
+### Oszilloskop
+
+Mach dich mit Oszilloskop und Frequenzgenerator vertraut.
+- Bestimme oder Überprüfe mit dem Oszilloskop Frequenz, Periode, Amplitude, Effektivwert, Gleichanteil des Signals. 
+- Bestimme mit einer Frequenzanalyse Störabstand und Bandbreite des Signals.
+
+
+
+
 
 ## Nachrichtenquader
 
