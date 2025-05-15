@@ -51,8 +51,7 @@ Also z.B.:
 
 ### Fourier
 
-Versuche mit dieser [Fourier-Simulation](https://phet.colorado.
-edu/sims/html/fourier-making-waves/latest/fourier-making-waves_en.html) ein Rechtecksignal zu approximieren.
+Versuche mit [Geogebra](https://www.geogebra.org/calculator) ein Rechtecksignal zu approximieren.
 Notiere, die Frequenzen und Amplituden der einzelnen Sinusschwingungen.
 
 ### Frequenzspektrum
