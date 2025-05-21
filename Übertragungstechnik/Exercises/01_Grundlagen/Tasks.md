@@ -20,7 +20,7 @@ Versuche anschliessend in der Gruppe die nicht bekannten Punkte zu klären und b
 - Was sind die Eigenschaften von Koaxialkabel?
 - Wieso wird immer mehr IP basierte Übertragung genutzt? Welche Vor- und Nachteile hat das?
 
-## Zeit- und Frequenzbereich
+## Oszilloskop und Frequenzgenerator
 
 Mach dich mit Oszilloskop und Frequenzgenerator vertraut.
 
@@ -40,7 +40,12 @@ Folge für die Untersuchungen einem wissenschaftlichen Ansatz:
 
 Halte die einzelnen Punkte schriftlich fest.
 
-## Frequenzspektrum
+## Fourier
+
+Versuche mit [Geogebra](https://www.geogebra.org/calculator) ein Rechtecksignal zu approximieren.
+Notiere, die Frequenzen und Amplituden der einzelnen Sinusschwingungen.
+
+## Simulation
 
 Arbeite mit dem Script `frequency_spectrums.py` in Github Repository.
 
@@ -51,7 +56,7 @@ Untersuche den Einfluss der verschiedenen Grössen auf die Darstellung:
 
 Notiere deine Erkenntnisse.
 
-## Bandbreite
+## Bandbreite von Protokollen
 
 Erstelle eine Tabelle, in der du verschiedene Protokolle nach der verfügbaren Bandbreite ordnest.
 
@@ -77,31 +82,6 @@ Also z.B.:
 | Protokoll        | Frequenzbereich(e)       | Kanalbandbreite(n) | Übertragungskanal |
 |------------------|--------------------------|--------------------|-------------------|
 | DAB  (Pro Kanal) | 174-230MHz, 1452-1492MHz | 7 MHz              | Funk              |
-
-### Fourier
-
-Versuche mit [Geogebra](https://www.geogebra.org/calculator) ein Rechtecksignal zu approximieren.
-Notiere, die Frequenzen und Amplituden der einzelnen Sinusschwingungen.
-
-### Frequenzspektrum
-
-Arbeite mit dem Script [`frequency_spectrums.py`](../../Examples/frequency_spectrums.py).
-
-Untersuche den Einfluss der verschiedenen Grössen auf die Darstellung:
-- Filterfrequenzen (Hoch- und Tiefpass)
-- Verhältnis von Signal zu Rausch-Pegel
-
-Notiere deine Erkenntnisse.
-
-### Oszilloskop
-
-Mach dich mit Oszilloskop und Frequenzgenerator vertraut.
-- Bestimme oder Überprüfe mit dem Oszilloskop Frequenz, Periode, Amplitude, Effektivwert, Gleichanteil des Signals. 
-- Bestimme mit einer Frequenzanalyse Störabstand und Bandbreite des Signals.
-
-
-
-
 
 ## Nachrichtenquader
 
