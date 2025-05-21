@@ -22,7 +22,36 @@ Versuche anschliessend in der Gruppe die nicht bekannten Punkte zu klären und b
 
 ## Zeit- und Frequenzbereich
 
-### Bandbreite
+Mach dich mit Oszilloskop und Frequenzgenerator vertraut.
+
+- Bestimme oder Überprüfe mit dem Oszilloskop Frequenz, Periode, Amplitude, Effektivwert, Gleichanteil von 
+  verschiedenen Signalen.
+- Untersuche den Einfluss einer Längsinduktivität und einer Querkapazität auf ein Rechtecksignal.
+- Untersuche den Frequenzbereich von verschiedenen Signalen (Sinus, Rechteck, Sägezahn).
+- Bestimme mit einer Frequenzanalyse Störabstand und Bandbreite des Signals.
+
+Folge für die Untersuchungen einem wissenschaftlichen Ansatz:
+
+- Wähle eine konkrete, abgegrenzte Fragestellung aus den oben aufgeführten Fragen.
+- Formuliere eine These anhand der Theorie
+- Versuche die These mit einem Experiment zu belegen.
+- Halte die Ergebnisse anschaulich fest
+- Diskutiere die Ergebnisse
+
+Halte die einzelnen Punkte schriftlich fest.
+
+## Frequenzspektrum
+
+Arbeite mit dem Script `frequency_spectrums.py` in Github Repository.
+
+Untersuche den Einfluss der verschiedenen Grössen auf die Darstellung:
+
+- Filterfrequenzen (Hoch- und Tiefpass)
+- Verhältnis von Signal zu Rausch-Pegel
+
+Notiere deine Erkenntnisse.
+
+## Bandbreite
 
 Erstelle eine Tabelle, in der du verschiedene Protokolle nach der verfügbaren Bandbreite ordnest.
 
