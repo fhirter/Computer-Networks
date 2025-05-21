@@ -31,8 +31,8 @@ Halte ebenfalls den Übertragungskanal fest (Funk, Twisted Pair, Koaxial, Glasfa
 Viele Protokolle teilen den verfügbaren Frequenzbereich in Kanäle auf. Gib sowohl die verfügbare Bandbreite wie auch die
 Kanalbandbreite an.
 
-Die Zuweisung der Funkfrequenzen ist pro Land unterschiedlich.
-Gib die Situation in der Schweiz an ([zugewiesenen Frequenzbereich](https://www.bakom.admin.
+Die Zuweisung der Funkfrequenzen ist pro Land unterschiedlich. Gib die Situation in der Schweiz
+an ([zugewiesenen Frequenzbereich](https://www.bakom.admin.
 ch/bakom/de/home/frequenzen-antennen/nationaler-frequenzzuweisungsplan.html)).
 
 - DVB-T
