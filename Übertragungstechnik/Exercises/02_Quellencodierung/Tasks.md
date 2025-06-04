@@ -1,14 +1,12 @@
-# Übung Störabstand
+# Übung Quellencodierung
 
 ## Digitale und Analoge Signale
 
-Digitalisiere folgendes Signal mit einer Abtastrate von 200Hz und einer Bittiefe von 2Bit:
+Skizziere, wie folgendes Signal mit einer Abtastrate von 200Hz und einer Bittiefe von 2Bit digitalisiert wird:
 
 ![Zeitbereich.png](Zeitbereich.png)
 
-Skizziere die digitalen Abtastpunkte.
-
-## Komprimierung
+## Audiokomprimierung
 
 Vergleiche die Audiobeispiele, die unterschiedlich stark komprimiert sind.
 Notiere deine Erkenntnisse.
