@@ -1,5 +1,13 @@
 # Übung Störabstand
 
+## Digitale und Analoge Signale
+
+Digitalisiere folgendes Signal mit einer Abtastrate von 200Hz und einer Bittiefe von 2Bit:
+
+![Zeitbereich.png](Zeitbereich.png)
+
+Skizziere die digitalen Abtastpunkte.
+
 ## Komprimierung
 
 Vergleiche die Audiobeispiele, die unterschiedlich stark komprimiert sind.

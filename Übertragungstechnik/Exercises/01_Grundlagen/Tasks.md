@@ -91,11 +91,3 @@ den Frequenzbereich, die Y-Achse den Störabstand des Kanals:
 Zeichne in diese drei Diagramme nun jeweils eine Fläche ein, die den verfügbaren Störabstand und Frequenzbereich des
 Übertragungskanals darstellt. Die exakten numerischen Werte sind dabei zweitrangig, wichtig ist das Verhältnis der drei
 Kanäle.
-
-## Digitale und Analoge Signale
-
-Digitalisiere folgendes Signal mit einer Abtastrate von 200Hz und einer Bittiefe von 2Bit:
-
-![Zeitbereich.png](Zeitbereich.png)
-
-Skizziere die digitalen Abtastpunkte.
