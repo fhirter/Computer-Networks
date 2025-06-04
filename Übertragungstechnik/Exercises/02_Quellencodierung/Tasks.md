@@ -24,12 +24,5 @@ Der resultierende Störabstand ist proportional zur verwendeten Bit-Tiefe n:
 
 - Beschreibe, wie durch die Quantisierung Rauschen verursacht wird.
 
-## Fotokamera 
-
-Untersuche das Rauschen einer Fotokamera.
-Halte in einem Dokument fest, wie sich das Rauschen in Abhängigkeit der gewählten ISO Stufe verhält.
-Hinweis: Bei Bildern zeigt sich das Rauschen in dunklen Bildteilen als farbige Pixel.
-
-Notiere deine Erkenntnisse.
 
 

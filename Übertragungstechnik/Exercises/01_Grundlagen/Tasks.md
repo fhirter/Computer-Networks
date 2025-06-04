@@ -91,3 +91,11 @@ den Frequenzbereich, die Y-Achse den Störabstand des Kanals:
 Zeichne in diese drei Diagramme nun jeweils eine Fläche ein, die den verfügbaren Störabstand und Frequenzbereich des
 Übertragungskanals darstellt. Die exakten numerischen Werte sind dabei zweitrangig, wichtig ist das Verhältnis der drei
 Kanäle.
+
+## Rauschen Fotokamera
+
+Untersuche das Rauschen einer Fotokamera.
+Halte in einem Dokument fest, wie sich das Rauschen in Abhängigkeit der gewählten ISO Stufe verhält.
+Hinweis: Bei Bildern zeigt sich das Rauschen in dunklen Bildteilen als farbige Pixel.
+
+Notiere deine Erkenntnisse.
