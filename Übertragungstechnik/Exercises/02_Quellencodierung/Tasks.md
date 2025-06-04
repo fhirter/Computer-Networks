@@ -1,5 +1,13 @@
 # Übung Quellencodierung
 
+## Schallwandler
+
+Speise einen Lautsprecher mit einem Signal aus dem Funktionsgenerator.
+
+Untersuche mit dem Oszilloskop die Spannung am Ausgang vom Mikrofon welches auf den Lautsprecher ausgerichtet ist.
+
+Untersuche auch den digitalen Ausgang am Interface.
+
 ## Digitale und Analoge Signale
 
 Skizziere, wie folgendes Signal mit einer Abtastrate von 200Hz und einer Bittiefe von 2Bit digitalisiert wird:
