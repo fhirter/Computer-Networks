@@ -14,11 +14,6 @@ Skizziere, wie folgendes Signal mit einer Abtastrate von 200Hz und einer Bittief
 
 ![Zeitbereich.png](Zeitbereich.png)
 
-## Audiokomprimierung
-
-Vergleiche die Audiobeispiele, die unterschiedlich stark komprimiert sind.
-Notiere deine Erkenntnisse.
-
 ## AD-Wandlung
 
 Die beiden wichtigsten Kennwerte der Digital-Analog-Wandlung sind Bitrate und Abtastrate (engl. sampling rate).
@@ -31,4 +26,7 @@ Der resultierende Störabstand ist proportional zur verwendeten Bit-Tiefe n:
 - Beschreibe, wie durch die Quantisierung Rauschen verursacht wird.
 
 
+## Audiokomprimierung
 
+Vergleiche die Audiobeispiele, die unterschiedlich stark komprimiert sind.
+Notiere deine Erkenntnisse.
