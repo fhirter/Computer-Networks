@@ -1,5 +1,15 @@
 # Übung Leitungscodierung
 
+## Grundlagen
+
+Recherchiere die Funktionsweise folgender Leitungscodes:
+
+- NRZ
+- Manchester
+- 8b/10b
+
+Skizziere die Funktionsweise!
+
 ## Modulation
 
 Arbeite mit dem Script [`modulation.py`](../../Examples/modulation.py).
