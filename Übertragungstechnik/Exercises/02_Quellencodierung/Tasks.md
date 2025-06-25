@@ -29,12 +29,3 @@ Der resultierende Störabstand ist proportional zur verwendeten Bit-Tiefe n:
 
 Vergleiche die Audiobeispiele, die unterschiedlich stark komprimiert sind.
 Notiere deine Erkenntnisse.
-
-## Rauschen Fotokamera
-
-1. Recherchiere, wie Kameras Licht in digitale Bilder umwandeln.
-2. Untersuche das Rauschen einer Fotokamera.
-Halte in einem Dokument fest, wie sich das Rauschen in Abhängigkeit der gewählten ISO Stufe verhält.
-Hinweis: Bei Bildern zeigt sich das Rauschen in dunklen Bildteilen als farbige Pixel.
-Notiere deine Erkenntnisse.
-3. Vergleiche die Ergebnisse der Recherche mit den Untersuchungen. Wie entsteht das Bildrauschen?

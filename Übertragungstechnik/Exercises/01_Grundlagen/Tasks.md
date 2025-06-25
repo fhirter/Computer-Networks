@@ -45,15 +45,6 @@ Halte die einzelnen Punkte schriftlich fest.
 Versuche mit [Geogebra](https://www.geogebra.org/calculator) ein Rechtecksignal zu approximieren.
 Notiere, die Frequenzen und Amplituden der einzelnen Sinusschwingungen.
 
-## Simulation
-
-Arbeite mit dem Script `frequency_spectrums.py` in Github Repository.
-
-Untersuche den Einfluss der verschiedenen Grössen auf die Darstellung:
-
-- Filterfrequenzen (Hoch- und Tiefpass)
-- Verhältnis von Signal zu Rausch-Pegel
-
 Notiere deine Erkenntnisse.
 
 ## Bandbreite von Protokollen
